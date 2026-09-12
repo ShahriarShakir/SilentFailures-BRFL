@@ -1,44 +1,59 @@
 # Provenance of the audited source
 
-## Scope
+## What `1_audited_source/` is
 
-`1_audited_source/` is the anonymized, read-only snapshot of the single Byzantine-robust federated-learning pipeline examined in the paper *When the Metric Cannot See the Failure*. It is retained to support inspection of the eight implementation and evaluation faults reported in Section 4. It is distinct from `2_corrected_harness/`, which contains the repaired implementation used for the controlled validation experiments.
+The single federated learning pipeline the paper examines, as it stood when the audit was
+performed. It supports inspection of the eight faults reported in Section 4. It is separate from
+`2_corrected_harness/`, the repaired implementation used for the controlled experiments.
 
-## Version identification
+## Version
 
-The anonymized snapshot first entered the review artifact in Git commit `6b078871ec7072170fd4a179710c1832ced73a82` (12 September 2026). That commit identifies the exact code and result snapshot distributed for review; it is an artifact commit, not an upstream development commit.
+The project was not under version control when the audit was performed. The archive hash in
+Section 3 of the paper identifies the snapshot. The archive contains no upstream history,
+tag, repository address, or licence file from which an earlier revision can be recovered.
 
-The supplied archive contains no upstream `.git` history, release tag, repository URL, or license file from which an earlier development revision can be independently recovered. The code snapshot is described in the artifact as the June 2026 state of the audited client, while the retained campaign logs record executions from 3–11 May 2026. This distinction matters for the seed-liveness finding: the June client snapshot passes a `seed` argument, whereas the May logs show `seed=0` in every recorded trainer configuration. The paper tests whether that later argument reaches the data-loader path.
+The client source is the June 2026 state. The campaign logs in `original_logs/` record
+executions from 3 to 11 May 2026. The two differ in one respect that matters for Section 4.8:
+the June source passes a seed argument to the training call, and the May logs show `seed=0` in
+every one of the 2100 recorded trainer configurations, because that argument did not exist when
+the campaign ran. Section 5 of the paper reports that the argument, once present, does not reach
+the data loader either.
 
-During double-blind review, any identifying upstream repository location is withheld from the public artifact. The authors can provide the original repository identity and any available development revision privately to the Action Editor, and will add the de-anonymized source location to the public record when review anonymity no longer applies.
+The authors will supply the repository location privately to the Action Editor on request, and
+will add it to the public record when anonymity no longer applies.
 
-## Contents of the supplied snapshot
+## Contents
 
-The complete source archive contains:
+- 30 Python source files
+- 38 campaign logs in `original_logs/`; two are shipped gzip-compressed (see README)
+- 111 result files in `original_results/`
 
-- 30 Python source files under `1_audited_source/`;
-- 38 campaign log files under `1_audited_source/original_logs/`;
-- 111 JSON result files under `1_audited_source/original_results/`.
+`CLAIMS.md` maps each claim in the paper to a file and a verification command.
 
-`CLAIMS.md` maps each manuscript claim to the relevant source file, run record, derived result, and verification command. `6_regenerate/` contains the scripts that derive the reported values and figures from the retained records.
+## Preparation for review
 
-## Preparation for double-blind review
+Identifying paths and strings were replaced, one author docstring was removed, and the method's
+identifiers were renamed to `PhotoScreen` and `QualityGate` throughout. Executable logic,
+hyperparameters, constants, and recorded values were not changed. All Python files parse.
 
-The review snapshot was prepared by replacing identifying absolute paths with `/ANON`, removing one author-identifying docstring, and removing comments that named a venue or review cycle. Method identifiers were replaced consistently with `PhotoScreen` and `QualityGate`. These transformations were limited to identifiers and prose: executable logic, hyperparameters, constants, and recorded values were not intentionally changed. Comments outside `1_audited_source/` were edited for clarity. All included Python files pass syntax validation.
+## Oversized logs
 
-## Oversized log files
-
-Two raw logs in the complete archive exceed GitHub's 100 MB per-file limit and therefore cannot be stored as ordinary GitHub blobs:
-
-| File | Raw size (bytes) | SHA-256 |
-|---|---:|---|
+| file | raw bytes | SHA-256 of the raw file |
+|---|---|---|
 | `original_logs/ablation_layers.log` | 247,344,449 | `53e1e2f0adf48053605caf589169eefa84ed92830a49dab8accf4c7399b99493` |
-| `original_logs/P0_master.log` | 444,305,248 | `1c5df738853d94237d6cbb0fa364949a7b3b20a64428675ef7fe6ce3bfe6370f` |
+| `original_logs/P0_master.log` | 444,305,248 | `8bf075d62870f4fc71d8facdf63b4524b96132846b9f2bbb95f97cde0967b9b7` |
 
-For the hosted review artifact, these files should be provided as gzip-compressed files (`ablation_layers.log.gz` and `P0_master.log.gz`) together with instructions to decompress them before running scripts that scan `original_logs/*.log`. The hashes above refer to the decompressed raw files.
+Shipped as `.gz` (27.8 MB and 49.8 MB). Decompress before running scripts that scan
+`original_logs/*.log`; 1604 of the 2174 screen invocations counted in Section 4.5 are in these
+two files.
 
-## External data and software
+## Data and software
 
-The EuroCity Persons night subset is not redistributed because it is governed by its own license. Re-running training requires Python 3.10, Flower 1.24, Ultralytics 8, PyTorch 2.6, and Ray. The numerical regeneration scripts require NumPy, SciPy, and Matplotlib and do not require a GPU.
+The EuroCity Persons night subset is under its own licence and is not redistributed. Re-running
+training needs Python 3.10, Flower 1.24, Ultralytics 8, PyTorch 2.6, and Ray. The regeneration
+scripts need NumPy, SciPy, and Matplotlib, and no GPU.
 
-No license file is present in the supplied archive. Consequently, this provenance record does not assign a license to the audited source or grant permissions beyond access for peer-review verification.
+## Licence
+
+This archive is provided for peer review of the paper. No licence is granted beyond access for
+that purpose; a licence will be attached on publication.

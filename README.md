@@ -9,6 +9,7 @@ supports it.
 
 ```
 1_audited_source/     the pipeline the paper audits, as it was at audit time, its 38 campaign logs, and its 111 result files
+                      (two logs are shipped gzip-compressed; see below)
 2_corrected_harness/  the repaired pipeline (Section 6)
 3_tests/              the five tests (Section 8), the contracts (Appendix F), the fault-injection harness (Section 9)
 4_run_records/        112 run records, one JSON per training run
@@ -44,6 +45,24 @@ Each fault in Section 4 names the routine it lives in. In `1_audited_source/`:
 | 4.5 to 4.7 screen faults | `fl/utils/quality_scoring.py` and `fl/server_strategies.py`; the observed scores are in `5_derived_results/g1_photometric_separation.json` |
 | 4.8 seeds inert | `original_logs/robust_baselines.log`: 2100 trainer-configuration lines, every one `seed=0`. The client source shipped here is from June 2026 and already passes a seed to the training call; the May logs predate that change, and Section 5 shows the argument is inert regardless. |
 
+## Two compressed logs
+
+`original_logs/ablation_layers.log` (247 MB) and `original_logs/P0_master.log` (444 MB) are
+shipped as `.gz` files because of the host's per-file size limit. Decompress them in place
+before running anything that scans `original_logs/*.log`:
+
+```
+cd 1_audited_source/original_logs
+gzip -dk ablation_layers.log.gz P0_master.log.gz
+```
+
+SHA-256 of the decompressed files:
+`53e1e2f0adf48053605caf589169eefa84ed92830a49dab8accf4c7399b99493  ablation_layers.log`
+`8bf075d62870f4fc71d8facdf63b4524b96132846b9f2bbb95f97cde0967b9b7  P0_master.log`
+
+`computed_values.py` counts screen invocations across every log, so the count of 2174 in the
+paper depends on these two being decompressed first.
+
 ## Run records
 
 Each file in `4_run_records/` is one training run: the configuration, the malicious client set,
@@ -57,7 +76,9 @@ Training needs Flower 1.24, Ultralytics 8, PyTorch 2.6, Ray, and the EuroCity Pe
 subset, which has its own licence and is not included. `2_corrected_harness/runner.py` is the
 entry point; `runner.py --help` lists the flags.
 
-## Artifact preparation
+## What was changed for review
 
-For double-blind review, identifying file paths, an author-identifying docstring, and references to specific venues or review cycles were removed from `1_audited_source/`. Method identifiers were consistently replaced with `PhotoScreen` and `QualityGate`. These changes did not alter executable logic, hyperparameters, constants, or recorded results. Comments in the remaining directories were edited only for clarity. All Python files pass syntax validation.
-
+In `1_audited_source/`, identifying paths and strings were replaced and the method's identifiers
+were renamed to `PhotoScreen` and `QualityGate`. Nothing else in the audited source was touched;
+its comments are the original author's. In the other directories the comments were edited for
+clarity. No code logic, constant, or data value was changed anywhere. All Python files parse.
