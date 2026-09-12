@@ -2093,8 +2093,8 @@
 2026-05-03 23:05:59,873	INFO worker.py:2012 -- Started a local Ray instance.
 /ANON/miniconda3/envs/federatedlearning/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
   warnings.warn(
-[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'object_store_memory': 35604977664.0, 'GPU': 1.0, 'CPU': 14.0, 'node:__internal_head__': 1.0, 'node:131.236.54.229': 1.0, 'TPU': 1.0, 'memory': 83078281216.0}
-INFO:flwr:Flower VCE: Ray initialized with resources: {'object_store_memory': 35604977664.0, 'GPU': 1.0, 'CPU': 14.0, 'node:__internal_head__': 1.0, 'node:131.236.54.229': 1.0, 'TPU': 1.0, 'memory': 83078281216.0}
+[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'object_store_memory': 35604977664.0, 'GPU': 1.0, 'CPU': 14.0, 'node:__internal_head__': 1.0, 'node:ANON_IP': 1.0, 'TPU': 1.0, 'memory': 83078281216.0}
+INFO:flwr:Flower VCE: Ray initialized with resources: {'object_store_memory': 35604977664.0, 'GPU': 1.0, 'CPU': 14.0, 'node:__internal_head__': 1.0, 'node:ANON_IP': 1.0, 'TPU': 1.0, 'memory': 83078281216.0}
 [92mINFO [0m:      Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
 INFO:flwr:Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
 [92mINFO [0m:      Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0.14}
