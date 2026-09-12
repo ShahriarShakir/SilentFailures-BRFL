@@ -57,10 +57,7 @@ Training needs Flower 1.24, Ultralytics 8, PyTorch 2.6, Ray, and the EuroCity Pe
 subset, which has its own licence and is not included. `2_corrected_harness/runner.py` is the
 entry point; `runner.py --help` lists the flags.
 
-## What was changed for review
+## Artifact preparation
 
-In `1_audited_source/`: paths, one author docstring, and comments that named a venue or review
-cycle were removed, and the method's identifiers were renamed to `PhotoScreen` and `QualityGate`.
-Nothing else in the audited source was touched; its comments are the original author's. In the
-other directories the comments were edited for clarity. No code logic, constant, or data value
-was changed anywhere. All Python files parse.
+For double-blind review, identifying file paths, an author-identifying docstring, and references to specific venues or review cycles were removed from `1_audited_source/`. Method identifiers were consistently replaced with `PhotoScreen` and `QualityGate`. These changes did not alter executable logic, hyperparameters, constants, or recorded results. Comments in the remaining directories were edited only for clarity. All Python files pass syntax validation.
+
