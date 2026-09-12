@@ -19,8 +19,8 @@ every one of the 2100 recorded trainer configurations, because that argument did
 the campaign ran. Section 5 of the paper reports that the argument, once present, does not reach
 the data loader either.
 
-The authors will supply the repository location privately to the Action Editor on request, and
-will add it to the public record when anonymity no longer applies.
+The authors can provide the Action Editor with contemporaneous workspace records privately if
+additional verification of the snapshot is required.
 
 ## Contents
 
@@ -32,16 +32,17 @@ will add it to the public record when anonymity no longer applies.
 
 ## Preparation for review
 
-Identifying paths and strings were replaced, one author docstring was removed, and the method's
-identifiers were renamed to `PhotoScreen` and `QualityGate` throughout. Executable logic,
+Identifying paths and strings were replaced, the execution host's IP address was replaced with
+`ANON_IP`, one author docstring was removed, and the method's identifiers were renamed to
+`PhotoScreen` and `QualityGate` throughout. Executable logic,
 hyperparameters, constants, and recorded values were not changed. All Python files parse.
 
 ## Oversized logs
 
-| file | raw bytes | SHA-256 of the raw file |
+| file | raw bytes | SHA-256 of the decompressed sanitised file |
 |---|---|---|
-| `original_logs/ablation_layers.log` | 247,344,449 | `53e1e2f0adf48053605caf589169eefa84ed92830a49dab8accf4c7399b99493` |
-| `original_logs/P0_master.log` | 444,305,248 | `8bf075d62870f4fc71d8facdf63b4524b96132846b9f2bbb95f97cde0967b9b7` |
+| `original_logs/ablation_layers.log` | 247,344,113 | `fe293aaff2c99b8b0d26b69bb129231f88d1a156c7ff303bd20dfa3a12b889dd` |
+| `original_logs/P0_master.log` | 444,304,716 | `952f88bc367a1b7bce5db6bdcc4446d6aadab12ba3dc3a79bd96a1ffb902126c` |
 
 Shipped as `.gz` (27.8 MB and 49.8 MB). Decompress before running scripts that scan
 `original_logs/*.log`; 1604 of the 2174 screen invocations counted in Section 4.5 are in these

@@ -3,7 +3,8 @@
 This archive has everything needed to check the paper: the code that was audited, the
 corrected code, the tests, the run records, and the scripts that turn those records into the
 numbers and figures in the paper. `CLAIMS.md` maps each claim in the paper to the file that
-supports it.
+supports it. `PROVENANCE.md` documents the origin, version limitations, anonymization changes,
+and contents of the audited snapshot.
 
 ## Layout
 
@@ -19,7 +20,11 @@ supports it.
 
 ## Check the paper's numbers
 
+Two logs are shipped compressed; decompress them first, then regenerate:
+
 ```
+gzip -dk 1_audited_source/original_logs/ablation_layers.log.gz
+gzip -dk 1_audited_source/original_logs/P0_master.log.gz
 cd 6_regenerate
 python computed_values.py    # writes computed_values.tex
 python c6_values.py          # writes c6_values.tex
@@ -28,9 +33,10 @@ cd ..
 python 3_tests/falsification_suite.py   # reproduces the T2 and T4 findings
 ```
 
-The two `.tex` files are byte-identical to the ones the PDF was built from. The scripts read
-`4_run_records/` and `5_derived_results/` only. They need Python 3.10 with numpy, scipy and
-matplotlib, and no GPU.
+The two `.tex` files are byte-identical to the ones the PDF was built from. The regeneration
+scripts read `4_run_records/`, `5_derived_results/`, and, for the screen-invocation count,
+`1_audited_source/original_logs/`. They need Python 3.10 with numpy, scipy and matplotlib, and
+no GPU.
 
 ## Find the eight faults
 
@@ -57,8 +63,8 @@ gzip -dk ablation_layers.log.gz P0_master.log.gz
 ```
 
 SHA-256 of the decompressed files:
-`53e1e2f0adf48053605caf589169eefa84ed92830a49dab8accf4c7399b99493  ablation_layers.log`
-`8bf075d62870f4fc71d8facdf63b4524b96132846b9f2bbb95f97cde0967b9b7  P0_master.log`
+`fe293aaff2c99b8b0d26b69bb129231f88d1a156c7ff303bd20dfa3a12b889dd  ablation_layers.log`
+`952f88bc367a1b7bce5db6bdcc4446d6aadab12ba3dc3a79bd96a1ffb902126c  P0_master.log`
 
 `computed_values.py` counts screen invocations across every log, so the count of 2174 in the
 paper depends on these two being decompressed first.
@@ -78,7 +84,8 @@ entry point; `runner.py --help` lists the flags.
 
 ## What was changed for review
 
-In `1_audited_source/`, identifying paths and strings were replaced and the method's identifiers
-were renamed to `PhotoScreen` and `QualityGate`. Nothing else in the audited source was touched;
+In `1_audited_source/`, identifying paths and strings were replaced, the execution host's IP
+address was replaced with `ANON_IP`, and the method's identifiers were renamed to `PhotoScreen`
+and `QualityGate`. Nothing else in the audited source was touched;
 its comments are the original author's. In the other directories the comments were edited for
 clarity. No code logic, constant, or data value was changed anywhere. All Python files parse.
