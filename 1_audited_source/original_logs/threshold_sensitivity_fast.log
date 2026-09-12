@@ -1,0 +1,9 @@
+[plan] experiment E_threshold_sensitivity: 8 runs
+  [skip] E_threshold_sensitivity/q_min_0.1_s1 (already done)
+  [skip] E_threshold_sensitivity/q_min_0.15_s1 (already done)
+  [skip] E_threshold_sensitivity/q_min_0.2_s1 (already done)
+  [skip] E_threshold_sensitivity/q_min_0.25_s1 (already done)
+  [skip] E_threshold_sensitivity/q_min_0.3_s1 (already done)
+  [skip] E_threshold_sensitivity/mad_threshold_2.0_s1 (already done)
+  [skip] E_threshold_sensitivity/mad_threshold_3.0_s1 (already done)
+  [skip] E_threshold_sensitivity/mad_threshold_4.0_s1 (already done)

@@ -1,0 +1,28 @@
+{
+  "sizes": {
+    "budapest/train": 475,
+    "budapest/val": 86,
+    "koeln/train": 496,
+    "koeln/val": 82,
+    "leipzig/train": 170,
+    "leipzig/val": 15,
+    "lyon/train": 477,
+    "lyon/val": 115,
+    "prague/train": 422,
+    "prague/val": 69,
+    "roma/train": 724,
+    "roma/val": 133,
+    "zagreb/train": 457,
+    "zagreb/val": 80,
+    "global/train": 3221,
+    "global/val": 580
+  },
+  "exact_overlaps": {},
+  "near_duplicates": [],
+  "ham_thresh": 6,
+  "hash_candidates": 82,
+  "max_pixel_r": 0.7662400022522519,
+  "n_val": 580,
+  "n_train": 3221,
+  "pass": true
+}

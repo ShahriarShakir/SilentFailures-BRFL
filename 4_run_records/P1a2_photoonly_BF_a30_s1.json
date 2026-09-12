@@ -1,0 +1,278 @@
+{
+  "config": {
+    "strategy": "photoscreen2",
+    "attack": "brightness_flood",
+    "alpha": 0.3,
+    "intensity": 1.0,
+    "rounds": 12,
+    "seed": 1,
+    "local_epochs": 3,
+    "batch": 4,
+    "imgsz": 640,
+    "tag": "P1a2_photoonly_BF_a30_s1",
+    "strategy_kwargs": "{\"tau_photo\":3.0,\"temporal_anchor\":true,\"use_mad\":false,\"use_cos\":false}",
+    "gpu_frac": 0.14,
+    "dos_only": 1
+  },
+  "malicious_clients": [
+    0,
+    1
+  ],
+  "wall_seconds": 2113.5471472740173,
+  "global_eval": [
+    {
+      "round": 1,
+      "global_map50": 0.5245628732946848,
+      "global_map50_95": 0.2661074133265689,
+      "global_precision": 0.6218086027456242,
+      "global_recall": 0.4738521973974957
+    },
+    {
+      "round": 2,
+      "global_map50": 0.5602437695486041,
+      "global_map50_95": 0.29050435955200965,
+      "global_precision": 0.6413553182392947,
+      "global_recall": 0.5013503560029462
+    },
+    {
+      "round": 3,
+      "global_map50": 0.5868676801870408,
+      "global_map50_95": 0.31373261852963863,
+      "global_precision": 0.6641481052430797,
+      "global_recall": 0.5202553400441935
+    },
+    {
+      "round": 4,
+      "global_map50": 0.6033594312075917,
+      "global_map50_95": 0.3267742698827194,
+      "global_precision": 0.6721193616016756,
+      "global_recall": 0.527375398968819
+    },
+    {
+      "round": 5,
+      "global_map50": 0.6144427194867897,
+      "global_map50_95": 0.337018511996377,
+      "global_precision": 0.6768724646297335,
+      "global_recall": 0.5425975939111221
+    },
+    {
+      "round": 6,
+      "global_map50": 0.6122292706326435,
+      "global_map50_95": 0.32982760059126187,
+      "global_precision": 0.673962068335343,
+      "global_recall": 0.5369558570118537
+    },
+    {
+      "round": 7,
+      "global_map50": 0.6240743335935774,
+      "global_map50_95": 0.34122033688153763,
+      "global_precision": 0.6821842377411126,
+      "global_recall": 0.5499631721090106
+    },
+    {
+      "round": 8,
+      "global_map50": 0.6202797406502301,
+      "global_map50_95": 0.33892899930736864,
+      "global_precision": 0.665441891881655,
+      "global_recall": 0.5597839430395286
+    },
+    {
+      "round": 9,
+      "global_map50": 0.6265662342321336,
+      "global_map50_95": 0.33911948019813354,
+      "global_precision": 0.697740910403319,
+      "global_recall": 0.5467714215565922
+    },
+    {
+      "round": 10,
+      "global_map50": 0.6338733028163926,
+      "global_map50_95": 0.34329164676592105,
+      "global_precision": 0.7089896711649566,
+      "global_recall": 0.5553645961207955
+    },
+    {
+      "round": 11,
+      "global_map50": 0.6344695960410871,
+      "global_map50_95": 0.3411989192997756,
+      "global_precision": 0.6993228380531702,
+      "global_recall": 0.5624846550454211
+    },
+    {
+      "round": 12,
+      "global_map50": 0.630688974052904,
+      "global_map50_95": 0.34094301197859483,
+      "global_precision": 0.6942646448427436,
+      "global_recall": 0.5547381980627485
+    }
+  ],
+  "round_log": [
+    {
+      "round": 1,
+      "local_map50": 0.4277346516232214,
+      "local_map50_95": 0.2170181745493799,
+      "local_precision": 0.5763362596315357,
+      "local_recall": 0.3839141796710929,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "4",
+      "photo_d_max": 5.2183611183884135,
+      "scale_mu": 0.03377354860422201,
+      "photo_rejected": "4"
+    },
+    {
+      "round": 2,
+      "local_map50": 0.5026700069395519,
+      "local_map50_95": 0.255192905319138,
+      "local_precision": 0.6115124810183721,
+      "local_recall": 0.445510632063473,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "1",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "1"
+    },
+    {
+      "round": 3,
+      "local_map50": 0.5220491993788918,
+      "local_map50_95": 0.26642516260234483,
+      "local_precision": 0.6151613138605584,
+      "local_recall": 0.4643829195947209,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "1",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "1"
+    },
+    {
+      "round": 4,
+      "local_map50": 0.5449937332050226,
+      "local_map50_95": 0.28905813631873306,
+      "local_precision": 0.6311662115255591,
+      "local_recall": 0.47683643416604354,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "1",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "1"
+    },
+    {
+      "round": 5,
+      "local_map50": 0.5483064632191818,
+      "local_map50_95": 0.28733045837125903,
+      "local_precision": 0.6414011000552253,
+      "local_recall": 0.4778180958326879,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "3",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "3"
+    },
+    {
+      "round": 6,
+      "local_map50": 0.5493571930187076,
+      "local_map50_95": 0.2888886833052288,
+      "local_precision": 0.611090383764869,
+      "local_recall": 0.4832828128662593,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "1",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "1"
+    },
+    {
+      "round": 7,
+      "local_map50": 0.5665711161346616,
+      "local_map50_95": 0.2961805481696977,
+      "local_precision": 0.6765838308486661,
+      "local_recall": 0.4880170595119856,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "6",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "6"
+    },
+    {
+      "round": 8,
+      "local_map50": 0.5561755188818461,
+      "local_map50_95": 0.2951113967104186,
+      "local_precision": 0.6097933286027134,
+      "local_recall": 0.5072036915047821,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "2",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "2"
+    },
+    {
+      "round": 9,
+      "local_map50": 0.5657033531939073,
+      "local_map50_95": 0.2961552161211779,
+      "local_precision": 0.6141220952869489,
+      "local_recall": 0.5123007866295486,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "4",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "4"
+    },
+    {
+      "round": 10,
+      "local_map50": 0.5667392737675654,
+      "local_map50_95": 0.29705077112064304,
+      "local_precision": 0.6492150784704049,
+      "local_recall": 0.49690173254371917,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "1",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "1"
+    },
+    {
+      "round": 11,
+      "local_map50": 0.5581927498295303,
+      "local_map50_95": 0.2895743348325523,
+      "local_precision": 0.6392024570282464,
+      "local_recall": 0.5130774481036708,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "4",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "4"
+    },
+    {
+      "round": 12,
+      "local_map50": 0.5528987689521366,
+      "local_map50_95": 0.2881485730282312,
+      "local_precision": 0.650590327165693,
+      "local_recall": 0.4943427480613128,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 6,
+      "rejected_ids": "3",
+      "photo_d_max": 5.349139186457301,
+      "scale_mu": 0.022210877525294197,
+      "photo_rejected": "3"
+    }
+  ]
+}

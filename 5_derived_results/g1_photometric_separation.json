@@ -1,0 +1,1647 @@
+{
+  "script": "/ANON/fl_hod/project/work/scripts/g1_photometric_separation.py",
+  "convention": "grayscale L, /255, per-image mean & std, then mean over images",
+  "n_deployed": 32,
+  "n_robust": 200,
+  "seed": 1,
+  "iara_constants": {
+    "mu_ref": 0.29424603283405304,
+    "sigma_ref": 0.1888456866145134,
+    "beta": 0.1,
+    "q_min": 0.2
+  },
+  "cohorts": {
+    "7client": {
+      "cohort": "7client",
+      "per_client": {
+        "budapest": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2914898628368974,
+              "sigma": 0.17028489080257714
+            },
+            "brightness_flood": {
+              "mu": 0.7699133679270744,
+              "sigma": 0.11615007277578115
+            },
+            "darkness_injection": {
+              "mu": 0.06279469665605575,
+              "sigma": 0.13090393540915102
+            },
+            "noise_storm": {
+              "mu": 0.2921387620836252,
+              "sigma": 0.1930398632753194
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2697006393969059,
+              "sigma": 0.15335757400840522
+            },
+            "brightness_flood": {
+              "mu": 0.7540762317180634,
+              "sigma": 0.11064499586820603
+            },
+            "darkness_injection": {
+              "mu": 0.050397912699263546,
+              "sigma": 0.11264215860515833
+            },
+            "noise_storm": {
+              "mu": 0.2709827419059691,
+              "sigma": 0.17898790272180393
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 475
+        },
+        "koeln": {
+          "deployed": {
+            "clean": {
+              "mu": 0.20936985802836716,
+              "sigma": 0.15006808459293097
+            },
+            "brightness_flood": {
+              "mu": 0.6962560415267944,
+              "sigma": 0.11217981937807053
+            },
+            "darkness_injection": {
+              "mu": 0.03637491468907683,
+              "sigma": 0.09851938887732103
+            },
+            "noise_storm": {
+              "mu": 0.21339144348578054,
+              "sigma": 0.17425718164510437
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.1952010380104184,
+              "sigma": 0.14225398929789662
+            },
+            "brightness_flood": {
+              "mu": 0.6834642645716668,
+              "sigma": 0.1043602609820664
+            },
+            "darkness_injection": {
+              "mu": 0.03026255355391186,
+              "sigma": 0.09397364533506333
+            },
+            "noise_storm": {
+              "mu": 0.19957903132331736,
+              "sigma": 0.16729569018698862
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 496
+        },
+        "leipzig": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2161916741169989,
+              "sigma": 0.15557191870175302
+            },
+            "brightness_flood": {
+              "mu": 0.7070496156811714,
+              "sigma": 0.13016904541291296
+            },
+            "darkness_injection": {
+              "mu": 0.0405761577130761,
+              "sigma": 0.0944412499666214
+            },
+            "noise_storm": {
+              "mu": 0.22054930507779508,
+              "sigma": 0.1781285039738823
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.21955281693269224,
+              "sigma": 0.1565182769561515
+            },
+            "brightness_flood": {
+              "mu": 0.7090660487904268,
+              "sigma": 0.12916746744338203
+            },
+            "darkness_injection": {
+              "mu": 0.042080989589585976,
+              "sigma": 0.09606474785901167
+            },
+            "noise_storm": {
+              "mu": 0.22382130985651705,
+              "sigma": 0.17932832667487814
+            }
+          },
+          "n_robust": 170,
+          "n_train_total": 170
+        },
+        "lyon": {
+          "deployed": {
+            "clean": {
+              "mu": 0.25491632614284754,
+              "sigma": 0.16546227666549385
+            },
+            "brightness_flood": {
+              "mu": 0.7346891704946756,
+              "sigma": 0.11642150697298348
+            },
+            "darkness_injection": {
+              "mu": 0.05180832024780102,
+              "sigma": 0.11751828878186643
+            },
+            "noise_storm": {
+              "mu": 0.25690593997132627,
+              "sigma": 0.188001937220207
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.24101643212139606,
+              "sigma": 0.1574415097385645
+            },
+            "brightness_flood": {
+              "mu": 0.7249994337558746,
+              "sigma": 0.11457284085452557
+            },
+            "darkness_injection": {
+              "mu": 0.04361814951058477,
+              "sigma": 0.10827870863489807
+            },
+            "noise_storm": {
+              "mu": 0.24341126752885756,
+              "sigma": 0.1811237145368409
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 477
+        },
+        "prague": {
+          "deployed": {
+            "clean": {
+              "mu": 0.1881799683906138,
+              "sigma": 0.11522600124590099
+            },
+            "brightness_flood": {
+              "mu": 0.6821090541779995,
+              "sigma": 0.08978898241184652
+            },
+            "darkness_injection": {
+              "mu": 0.01706302072489052,
+              "sigma": 0.07181175280129537
+            },
+            "noise_storm": {
+              "mu": 0.1917105446503558,
+              "sigma": 0.14655125607383804
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.1931425965204835,
+              "sigma": 0.12171553807333112
+            },
+            "brightness_flood": {
+              "mu": 0.6857426601648331,
+              "sigma": 0.09250093365088105
+            },
+            "darkness_injection": {
+              "mu": 0.019987155598937534,
+              "sigma": 0.07822373950853943
+            },
+            "noise_storm": {
+              "mu": 0.19660784521043936,
+              "sigma": 0.15155934806853935
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 422
+        },
+        "roma": {
+          "deployed": {
+            "clean": {
+              "mu": 0.18972792383283377,
+              "sigma": 0.12339912657625973
+            },
+            "brightness_flood": {
+              "mu": 0.6815533824265003,
+              "sigma": 0.09504810790531337
+            },
+            "darkness_injection": {
+              "mu": 0.021931668117758818,
+              "sigma": 0.07766922551672906
+            },
+            "noise_storm": {
+              "mu": 0.1938929069019022,
+              "sigma": 0.15232130334105431
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2133133540302515,
+              "sigma": 0.1385338681936264
+            },
+            "brightness_flood": {
+              "mu": 0.7014648294448853,
+              "sigma": 0.10208815235644579
+            },
+            "darkness_injection": {
+              "mu": 0.031472603541915306,
+              "sigma": 0.09308733417652547
+            },
+            "noise_storm": {
+              "mu": 0.2164710139274912,
+              "sigma": 0.16536140634050603
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 724
+        },
+        "zagreb": {
+          "deployed": {
+            "clean": {
+              "mu": 0.23259701835922897,
+              "sigma": 0.14574904809705913
+            },
+            "brightness_flood": {
+              "mu": 0.7198106907308102,
+              "sigma": 0.11236933618783951
+            },
+            "darkness_injection": {
+              "mu": 0.041949383663450135,
+              "sigma": 0.09741662017768249
+            },
+            "noise_storm": {
+              "mu": 0.23558593927577354,
+              "sigma": 0.172578215578882
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.23426077160984277,
+              "sigma": 0.1467871111817658
+            },
+            "brightness_flood": {
+              "mu": 0.7220814096927642,
+              "sigma": 0.11482911262661219
+            },
+            "darkness_injection": {
+              "mu": 0.04112749211955816,
+              "sigma": 0.0964516154769808
+            },
+            "noise_storm": {
+              "mu": 0.23707873458091477,
+              "sigma": 0.17326264844035358
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 457
+        }
+      },
+      "benign_cloud": {
+        "mu_mean": 0.22374109266028436,
+        "mu_sd": 0.027075397832951247,
+        "sigma_mean": 0.14522969534996302,
+        "sigma_sd": 0.012593999637041189,
+        "mu_min": 0.1931425965204835,
+        "mu_max": 0.2697006393969059,
+        "sigma_min": 0.12171553807333112,
+        "sigma_max": 0.1574415097385645,
+        "n_clients": 7
+      },
+      "separation": {
+        "brightness_flood": {
+          "per_client": [
+            {
+              "client": "budapest",
+              "mu": 0.7540762317180634,
+              "sigma": 0.11064499586820603,
+              "z_mu_vs_others": 27.353930684013367,
+              "z_sigma_vs_others": -2.512558771084177,
+              "mahalanobis_2d": 27.46908217330823,
+              "deployed_iara_q_poisoned": 0.8729948503547882,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6149441704403606
+            },
+            {
+              "client": "koeln",
+              "mu": 0.6834642645716668,
+              "sigma": 0.1043602609820664,
+              "z_mu_vs_others": 17.324867682232057,
+              "z_sigma_vs_others": -3.014761054269918,
+              "mahalanobis_2d": 17.58521607547634,
+              "deployed_iara_q_poisoned": 0.9223745005063685,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6604706245612061
+            },
+            {
+              "client": "leipzig",
+              "mu": 0.7090660487904268,
+              "sigma": 0.12916746744338203,
+              "z_mu_vs_others": 16.377769750522525,
+              "z_sigma_vs_others": -1.1190067356357694,
+              "mahalanobis_2d": 16.415953157691725,
+              "deployed_iara_q_poisoned": 0.7461649789663505,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6010135587454486
+            },
+            {
+              "client": "lyon",
+              "mu": 0.7249994337558746,
+              "sigma": 0.11457284085452557,
+              "z_mu_vs_others": 17.71296279831954,
+              "z_sigma_vs_others": -2.294988755364389,
+              "mahalanobis_2d": 17.86101969322863,
+              "deployed_iara_q_poisoned": 0.8418691058961141,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5981328647811067
+            },
+            {
+              "client": "prague",
+              "mu": 0.6857426601648331,
+              "sigma": 0.09250093365088105,
+              "z_mu_vs_others": 17.768328983107683,
+              "z_sigma_vs_others": -7.234235942864467,
+              "mahalanobis_2d": 19.184568916944073,
+              "deployed_iara_q_poisoned": 1.019572331560721,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7718386109563581
+            },
+            {
+              "client": "roma",
+              "mu": 0.7014648294448853,
+              "sigma": 0.10208815235644579,
+              "z_mu_vs_others": 16.28484293176197,
+              "z_sigma_vs_others": -3.2999586091630877,
+              "mahalanobis_2d": 16.61583088907525,
+              "deployed_iara_q_poisoned": 0.9437350911875946,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6788236920901384
+            },
+            {
+              "client": "zagreb",
+              "mu": 0.7220814096927642,
+              "sigma": 0.11482911262661219,
+              "z_mu_vs_others": 17.114142372793665,
+              "z_sigma_vs_others": -2.188014592234316,
+              "mahalanobis_2d": 17.25344246844907,
+              "deployed_iara_q_poisoned": 0.8398703501386714,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6413301762143075
+            }
+          ],
+          "median_abs_z_mu": 17.324867682232057,
+          "median_mahalanobis": 17.58521607547634,
+          "deployed_iara_rejection_rate": 0.0
+        },
+        "darkness_injection": {
+          "per_client": [
+            {
+              "client": "budapest",
+              "mu": 0.050397912699263546,
+              "sigma": 0.11264215860515833,
+              "z_mu_vs_others": -8.424033218784793,
+              "z_sigma_vs_others": -2.361551225409467,
+              "mahalanobis_2d": 8.748786193605524,
+              "deployed_iara_q_poisoned": 0.8280277281174573,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6149441704403606
+            },
+            {
+              "client": "koeln",
+              "mu": 0.03026255355391186,
+              "sigma": 0.09397364533506333,
+              "z_mu_vs_others": -7.5486852261502655,
+              "z_sigma_vs_others": -3.771750601283503,
+              "mahalanobis_2d": 8.438527788766342,
+              "deployed_iara_q_poisoned": 0.9868015924946613,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6604706245612061
+            },
+            {
+              "client": "leipzig",
+              "mu": 0.042080989589585976,
+              "sigma": 0.09606474785901167,
+              "z_mu_vs_others": -6.162719638878416,
+              "z_sigma_vs_others": -3.731142323919258,
+              "mahalanobis_2d": 7.204202689316793,
+              "deployed_iara_q_poisoned": 0.970506152785755,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6010135587454486
+            },
+            {
+              "client": "lyon",
+              "mu": 0.04361814951058477,
+              "sigma": 0.10827870863489807,
+              "z_mu_vs_others": -6.2274895564460575,
+              "z_sigma_vs_others": -2.7996770622632208,
+              "mahalanobis_2d": 6.827870665779159,
+              "deployed_iara_q_poisoned": 0.8610999840009462,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5981328647811067
+            },
+            {
+              "client": "prague",
+              "mu": 0.019987155598937534,
+              "sigma": 0.07822373950853943,
+              "z_mu_vs_others": -8.122053496421207,
+              "z_sigma_vs_others": -9.057512629122657,
+              "mahalanobis_2d": 12.165783494105277,
+              "deployed_iara_q_poisoned": 0.9862879156229919,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7718386109563581
+            },
+            {
+              "client": "roma",
+              "mu": 0.031472603541915306,
+              "sigma": 0.09308733417652547,
+              "z_mu_vs_others": -6.637518648859838,
+              "z_sigma_vs_others": -3.9710836822376705,
+              "mahalanobis_2d": 7.734737191740675,
+              "deployed_iara_q_poisoned": 0.9868620845028804,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6788236920901384
+            },
+            {
+              "client": "zagreb",
+              "mu": 0.04112749211955816,
+              "sigma": 0.0964516154769808,
+              "z_mu_vs_others": -6.189379943614611,
+              "z_sigma_vs_others": -3.5220849293669607,
+              "mahalanobis_2d": 7.121341610686337,
+              "deployed_iara_q_poisoned": 0.9665668269256832,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6413301762143075
+            }
+          ],
+          "median_abs_z_mu": 6.637518648859838,
+          "median_mahalanobis": 7.734737191740675,
+          "deployed_iara_rejection_rate": 0.0
+        },
+        "noise_storm": {
+          "per_client": [
+            {
+              "client": "budapest",
+              "mu": 0.2709827419059691,
+              "sigma": 0.17898790272180393,
+              "z_mu_vs_others": 2.7914268054305613,
+              "z_sigma_vs_others": 2.654919290311068,
+              "mahalanobis_2d": 3.852357725879321,
+              "deployed_iara_q_poisoned": 0.5269210136433408,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6149441704403606
+            },
+            {
+              "client": "koeln",
+              "mu": 0.19957903132331736,
+              "sigma": 0.16729569018698862,
+              "z_mu_vs_others": -1.1012092060763183,
+              "z_sigma_vs_others": 1.572051788726347,
+              "mahalanobis_2d": 1.9193771234400347,
+              "deployed_iara_q_poisoned": 0.5617320352691925,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6604706245612061
+            },
+            {
+              "client": "leipzig",
+              "mu": 0.22382130985651705,
+              "sigma": 0.17932832667487814,
+              "z_mu_vs_others": -0.02087927215206492,
+              "z_sigma_vs_others": 2.8391866449266683,
+              "mahalanobis_2d": 2.8392634165810597,
+              "deployed_iara_q_poisoned": 0.5246791548092625,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6010135587454486
+            },
+            {
+              "client": "lyon",
+              "mu": 0.24341126752885756,
+              "sigma": 0.1811237145368409,
+              "z_mu_vs_others": 0.7922771047771217,
+              "z_sigma_vs_others": 3.041322365750496,
+              "mahalanobis_2d": 3.1428243258521804,
+              "deployed_iara_q_poisoned": 0.5199889253709797,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5981328647811067
+            },
+            {
+              "client": "prague",
+              "mu": 0.19660784521043936,
+              "sigma": 0.15155934806853935,
+              "z_mu_vs_others": -1.2535001363981366,
+              "z_sigma_vs_others": 0.3078503425455474,
+              "mahalanobis_2d": 1.2907495595023684,
+              "deployed_iara_q_poisoned": 0.6199634957439281,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7718386109563581
+            },
+            {
+              "client": "roma",
+              "mu": 0.2164710139274912,
+              "sigma": 0.16536140634050603,
+              "z_mu_vs_others": -0.30819079884898415,
+              "z_sigma_vs_others": 1.4178644103543399,
+              "mahalanobis_2d": 1.4509724513734348,
+              "deployed_iara_q_poisoned": 0.5687850117717382,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6788236920901384
+            },
+            {
+              "client": "zagreb",
+              "mu": 0.23707873458091477,
+              "sigma": 0.17326264844035358,
+              "z_mu_vs_others": 0.5164396923158133,
+              "z_sigma_vs_others": 2.0538278190678154,
+              "mahalanobis_2d": 2.1177626557704974,
+              "deployed_iara_q_poisoned": 0.5434085565411622,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6413301762143075
+            }
+          ],
+          "median_abs_z_mu": 0.7922771047771217,
+          "median_mahalanobis": 2.1177626557704974,
+          "deployed_iara_rejection_rate": 0.0
+        }
+      }
+    },
+    "14client": {
+      "cohort": "14client",
+      "per_client": {
+        "budapest_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.27565523888915777,
+              "sigma": 0.15680474834516644
+            },
+            "brightness_flood": {
+              "mu": 0.758991401642561,
+              "sigma": 0.11170949111692607
+            },
+            "darkness_injection": {
+              "mu": 0.053201263275695965,
+              "sigma": 0.1168169449083507
+            },
+            "noise_storm": {
+              "mu": 0.2768254870969782,
+              "sigma": 0.1818248359055022
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.27115194402635096,
+              "sigma": 0.1566160272806883
+            },
+            "brightness_flood": {
+              "mu": 0.7541645324230194,
+              "sigma": 0.11070131208747626
+            },
+            "darkness_injection": {
+              "mu": 0.05180247996351681,
+              "sigma": 0.1163017774745822
+            },
+            "noise_storm": {
+              "mu": 0.2723730980270363,
+              "sigma": 0.1816661756121553
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 237
+        },
+        "budapest_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.250998527277261,
+              "sigma": 0.1521668490022421
+            },
+            "brightness_flood": {
+              "mu": 0.7365360520780087,
+              "sigma": 0.11157519975677133
+            },
+            "darkness_injection": {
+              "mu": 0.045052288623992354,
+              "sigma": 0.10814799752552062
+            },
+            "noise_storm": {
+              "mu": 0.25295962035884656,
+              "sigma": 0.17738261984762876
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.26986632965505125,
+              "sigma": 0.15295809496194124
+            },
+            "brightness_flood": {
+              "mu": 0.7544963985681534,
+              "sigma": 0.1109841936826706
+            },
+            "darkness_injection": {
+              "mu": 0.05078471034299582,
+              "sigma": 0.11212539752945304
+            },
+            "noise_storm": {
+              "mu": 0.27120855191258153,
+              "sigma": 0.1785783151906962
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 238
+        },
+        "koeln_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.19740797276608646,
+              "sigma": 0.14539861248340458
+            },
+            "brightness_flood": {
+              "mu": 0.6851771324872971,
+              "sigma": 0.10445680806878954
+            },
+            "darkness_injection": {
+              "mu": 0.03085083204859984,
+              "sigma": 0.0979533328791149
+            },
+            "noise_storm": {
+              "mu": 0.20156634105119614,
+              "sigma": 0.1696738273694286
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.19525380823761224,
+              "sigma": 0.14052017845213413
+            },
+            "brightness_flood": {
+              "mu": 0.6836346364021302,
+              "sigma": 0.10301338573917747
+            },
+            "darkness_injection": {
+              "mu": 0.02993366837326903,
+              "sigma": 0.09308652147650719
+            },
+            "noise_storm": {
+              "mu": 0.19960949004619402,
+              "sigma": 0.16591510733256443
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 248
+        },
+        "koeln_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.20500138006173074,
+              "sigma": 0.15037560975179076
+            },
+            "brightness_flood": {
+              "mu": 0.6900059804320335,
+              "sigma": 0.10724643582943827
+            },
+            "darkness_injection": {
+              "mu": 0.036342348364996724,
+              "sigma": 0.10220865136943758
+            },
+            "noise_storm": {
+              "mu": 0.20910366527127802,
+              "sigma": 0.1743433481881081
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.19735837657004596,
+              "sigma": 0.14347023798152805
+            },
+            "brightness_flood": {
+              "mu": 0.685292597413063,
+              "sigma": 0.10538196478039026
+            },
+            "darkness_injection": {
+              "mu": 0.031799997607013214,
+              "sigma": 0.09510167024098337
+            },
+            "noise_storm": {
+              "mu": 0.20173009653182958,
+              "sigma": 0.16835839038156897
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 248
+        },
+        "leipzig_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2258995738811791,
+              "sigma": 0.16008822503499687
+            },
+            "brightness_flood": {
+              "mu": 0.714215986430645,
+              "sigma": 0.13161343964748085
+            },
+            "darkness_injection": {
+              "mu": 0.04572277613624465,
+              "sigma": 0.09901003760751337
+            },
+            "noise_storm": {
+              "mu": 0.23007011634897195,
+              "sigma": 0.18248765059431632
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.21827985968659905,
+              "sigma": 0.15665200843530544
+            },
+            "brightness_flood": {
+              "mu": 0.7072406221838559,
+              "sigma": 0.1284372916116434
+            },
+            "darkness_injection": {
+              "mu": 0.04241365343332291,
+              "sigma": 0.09631005597903448
+            },
+            "noise_storm": {
+              "mu": 0.22267623864490685,
+              "sigma": 0.17943738087060254
+            }
+          },
+          "n_robust": 85,
+          "n_train_total": 85
+        },
+        "leipzig_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.22837385814636946,
+              "sigma": 0.16137857176363468
+            },
+            "brightness_flood": {
+              "mu": 0.7178084775805473,
+              "sigma": 0.13504262967035174
+            },
+            "darkness_injection": {
+              "mu": 0.04577916779089719,
+              "sigma": 0.09853348159231246
+            },
+            "noise_storm": {
+              "mu": 0.23231634209051044,
+              "sigma": 0.18371604448032625
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.22082577417878543,
+              "sigma": 0.1563845454769976
+            },
+            "brightness_flood": {
+              "mu": 0.7108914753969978,
+              "sigma": 0.12989764327512068
+            },
+            "darkness_injection": {
+              "mu": 0.041748325745849045,
+              "sigma": 0.09581943973898888
+            },
+            "noise_storm": {
+              "mu": 0.22495380245155291,
+              "sigma": 0.17921221234916454
+            }
+          },
+          "n_robust": 85,
+          "n_train_total": 85
+        },
+        "lyon_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2483556172810495,
+              "sigma": 0.16233213478699327
+            },
+            "brightness_flood": {
+              "mu": 0.7289590407162905,
+              "sigma": 0.11529202223755419
+            },
+            "darkness_injection": {
+              "mu": 0.048849264574528206,
+              "sigma": 0.112821776419878
+            },
+            "noise_storm": {
+              "mu": 0.25051509340624367,
+              "sigma": 0.18581951243803135
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2432274629920721,
+              "sigma": 0.15901368353515863
+            },
+            "brightness_flood": {
+              "mu": 0.7257702764868736,
+              "sigma": 0.11467024881392718
+            },
+            "darkness_injection": {
+              "mu": 0.045889226944418625,
+              "sigma": 0.10985991609282791
+            },
+            "noise_storm": {
+              "mu": 0.24560019449921733,
+              "sigma": 0.1826787829805391
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 238
+        },
+        "lyon_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2318814699538052,
+              "sigma": 0.1580717305187136
+            },
+            "brightness_flood": {
+              "mu": 0.716181430965662,
+              "sigma": 0.11474353028461337
+            },
+            "darkness_injection": {
+              "mu": 0.04053084320912603,
+              "sigma": 0.10768467222806066
+            },
+            "noise_storm": {
+              "mu": 0.2345930285778111,
+              "sigma": 0.18145387318256112
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.23808696202933788,
+              "sigma": 0.15907923556864262
+            },
+            "brightness_flood": {
+              "mu": 0.7214109340310096,
+              "sigma": 0.11502730756998063
+            },
+            "darkness_injection": {
+              "mu": 0.04411176547640935,
+              "sigma": 0.10957287373021245
+            },
+            "noise_storm": {
+              "mu": 0.24068824955555015,
+              "sigma": 0.18225240181998445
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 239
+        },
+        "prague_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.19341404200531542,
+              "sigma": 0.12261097738519311
+            },
+            "brightness_flood": {
+              "mu": 0.685092257335782,
+              "sigma": 0.0917082994710654
+            },
+            "darkness_injection": {
+              "mu": 0.02089043161686277,
+              "sigma": 0.07952980330446735
+            },
+            "noise_storm": {
+              "mu": 0.1968685404543786,
+              "sigma": 0.15227301282892153
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.19269309140741825,
+              "sigma": 0.1194651909545064
+            },
+            "brightness_flood": {
+              "mu": 0.6858847984671592,
+              "sigma": 0.09195658622309566
+            },
+            "darkness_injection": {
+              "mu": 0.019284761716262436,
+              "sigma": 0.07588328586891294
+            },
+            "noise_storm": {
+              "mu": 0.19617992030238487,
+              "sigma": 0.1498037443256032
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 211
+        },
+        "prague_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.19326963974162936,
+              "sigma": 0.12395024648867548
+            },
+            "brightness_flood": {
+              "mu": 0.6857527028769255,
+              "sigma": 0.09428920841310173
+            },
+            "darkness_injection": {
+              "mu": 0.02052166984503856,
+              "sigma": 0.07954975450411439
+            },
+            "noise_storm": {
+              "mu": 0.1967054846548414,
+              "sigma": 0.15332721549527262
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.19122656404972077,
+              "sigma": 0.12208476977422833
+            },
+            "brightness_flood": {
+              "mu": 0.6839877882599831,
+              "sigma": 0.09260419825091958
+            },
+            "darkness_injection": {
+              "mu": 0.019204748979536817,
+              "sigma": 0.07833116685040295
+            },
+            "noise_storm": {
+              "mu": 0.19470815076568207,
+              "sigma": 0.1517374231118601
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 211
+        },
+        "roma_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.18311013979837298,
+              "sigma": 0.12005660857539624
+            },
+            "brightness_flood": {
+              "mu": 0.6751845385879278,
+              "sigma": 0.09178761555813253
+            },
+            "darkness_injection": {
+              "mu": 0.020614913610188523,
+              "sigma": 0.07571816875133663
+            },
+            "noise_storm": {
+              "mu": 0.18748201198561595,
+              "sigma": 0.1501147610624459
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2008334343507886,
+              "sigma": 0.1295155205577612
+            },
+            "brightness_flood": {
+              "mu": 0.6916558519005775,
+              "sigma": 0.09801567384973169
+            },
+            "darkness_injection": {
+              "mu": 0.025335832750424742,
+              "sigma": 0.08414408659562468
+            },
+            "noise_storm": {
+              "mu": 0.20442922597252128,
+              "sigma": 0.1577805628675231
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 362
+        },
+        "roma_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.2086518716532737,
+              "sigma": 0.12877682130783796
+            },
+            "brightness_flood": {
+              "mu": 0.700027571991086,
+              "sigma": 0.09885201801080257
+            },
+            "darkness_injection": {
+              "mu": 0.02670916409988422,
+              "sigma": 0.08442993473727256
+            },
+            "noise_storm": {
+              "mu": 0.21203790557229896,
+              "sigma": 0.15743517649898942
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2094288234785199,
+              "sigma": 0.13568844320252538
+            },
+            "brightness_flood": {
+              "mu": 0.6989105498790741,
+              "sigma": 0.10122916378080844
+            },
+            "darkness_injection": {
+              "mu": 0.02891876486944966,
+              "sigma": 0.0903333769645542
+            },
+            "noise_storm": {
+              "mu": 0.21273222649746298,
+              "sigma": 0.16291102080602748
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 362
+        },
+        "zagreb_a": {
+          "deployed": {
+            "clean": {
+              "mu": 0.23660104675218463,
+              "sigma": 0.15076503972522914
+            },
+            "brightness_flood": {
+              "mu": 0.7238759938627481,
+              "sigma": 0.11842640722170472
+            },
+            "darkness_injection": {
+              "mu": 0.04191362855635816,
+              "sigma": 0.0983871667413041
+            },
+            "noise_storm": {
+              "mu": 0.23948444309628641,
+              "sigma": 0.1764931251875645
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2322285659611225,
+              "sigma": 0.145583640281111
+            },
+            "brightness_flood": {
+              "mu": 0.7204280191659928,
+              "sigma": 0.11415523733943701
+            },
+            "darkness_injection": {
+              "mu": 0.039940763526246884,
+              "sigma": 0.0954671679250896
+            },
+            "noise_storm": {
+              "mu": 0.23508430105669695,
+              "sigma": 0.17230262357309264
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 228
+        },
+        "zagreb_b": {
+          "deployed": {
+            "clean": {
+              "mu": 0.22117612371221185,
+              "sigma": 0.14124993211589754
+            },
+            "brightness_flood": {
+              "mu": 0.7102076262235641,
+              "sigma": 0.1117648552171886
+            },
+            "darkness_injection": {
+              "mu": 0.03574485196440946,
+              "sigma": 0.09070627996698022
+            },
+            "noise_storm": {
+              "mu": 0.2244382646080373,
+              "sigma": 0.16851283538141532
+            }
+          },
+          "n_deployed": 32,
+          "robust": {
+            "clean": {
+              "mu": 0.2295331009849906,
+              "sigma": 0.14437925010919572
+            },
+            "brightness_flood": {
+              "mu": 0.7181681352853775,
+              "sigma": 0.11337316252291202
+            },
+            "darkness_injection": {
+              "mu": 0.039019051503855734,
+              "sigma": 0.09412196011748165
+            },
+            "noise_storm": {
+              "mu": 0.23246838806929448,
+              "sigma": 0.17108299478589814
+            }
+          },
+          "n_robust": 200,
+          "n_train_total": 229
+        }
+      },
+      "benign_cloud": {
+        "mu_mean": 0.22214243554345825,
+        "mu_sd": 0.026785940128766762,
+        "sigma_mean": 0.144386487612266,
+        "sigma_sd": 0.013529803454834,
+        "mu_min": 0.19122656404972077,
+        "mu_max": 0.27115194402635096,
+        "sigma_min": 0.1194651909545064,
+        "sigma_max": 0.15907923556864262,
+        "n_clients": 14
+      },
+      "separation": {
+        "brightness_flood": {
+          "per_client": [
+            {
+              "client": "budapest_a",
+              "mu": 0.7541645324230194,
+              "sigma": 0.11070131208747626,
+              "z_mu_vs_others": 22.60667338188448,
+              "z_sigma_vs_others": -2.408148200026679,
+              "mahalanobis_2d": 22.73457409208486,
+              "deployed_iara_q_poisoned": 0.872554506258579,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6021938643379148
+            },
+            {
+              "client": "budapest_b",
+              "mu": 0.7544963985681534,
+              "sigma": 0.1109841936826706,
+              "z_mu_vs_others": 22.39511555624672,
+              "z_sigma_vs_others": -2.3647644288746146,
+              "mahalanobis_2d": 22.51962059142459,
+              "deployed_iara_q_poisoned": 0.8703446290301173,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6165553172439637
+            },
+            {
+              "client": "koeln_a",
+              "mu": 0.6836346364021302,
+              "sigma": 0.10301338573917747,
+              "z_mu_vs_others": 17.212890615374697,
+              "z_sigma_vs_others": -2.969136847802822,
+              "mahalanobis_2d": 17.467094118880645,
+              "deployed_iara_q_poisoned": 0.9344420133632501,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6686215685998653
+            },
+            {
+              "client": "koeln_b",
+              "mu": 0.685292597413063,
+              "sigma": 0.10538196478039026,
+              "z_mu_vs_others": 17.163904181837882,
+              "z_sigma_vs_others": -2.7752940117491858,
+              "mahalanobis_2d": 17.386830177319926,
+              "deployed_iara_q_poisoned": 0.9135138179760215,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6549426059757296
+            },
+            {
+              "client": "leipzig_a",
+              "mu": 0.7072406221838559,
+              "sigma": 0.1284372916116434,
+              "z_mu_vs_others": 17.404036946893363,
+              "z_sigma_vs_others": -1.103810789465928,
+              "mahalanobis_2d": 17.439005140998457,
+              "deployed_iara_q_poisoned": 0.7503398805393031,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6004621224217175
+            },
+            {
+              "client": "leipzig_b",
+              "mu": 0.7108914753969978,
+              "sigma": 0.12989764327512068,
+              "z_mu_vs_others": 17.528769579362258,
+              "z_sigma_vs_others": -0.996332855782425,
+              "mahalanobis_2d": 17.55706245719617,
+              "deployed_iara_q_poisoned": 0.7420370123858873,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6015659381975682
+            },
+            {
+              "client": "lyon_a",
+              "mu": 0.7257702764868736,
+              "sigma": 0.11467024881392718,
+              "z_mu_vs_others": 18.60632984795572,
+              "z_sigma_vs_others": -2.1363457321883503,
+              "mahalanobis_2d": 18.728573984646225,
+              "deployed_iara_q_poisoned": 0.841185698459419,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5922847866284693
+            },
+            {
+              "client": "lyon_b",
+              "mu": 0.7214109340310096,
+              "sigma": 0.11502730756998063,
+              "z_mu_vs_others": 18.221373600621284,
+              "z_sigma_vs_others": -2.1103056404853064,
+              "mahalanobis_2d": 18.343168913513345,
+              "deployed_iara_q_poisoned": 0.8383957390174956,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5918881670646632
+            },
+            {
+              "client": "prague_a",
+              "mu": 0.6858847984671592,
+              "sigma": 0.09195658622309566,
+              "z_mu_vs_others": 17.44910135696116,
+              "z_sigma_vs_others": -4.551517527874955,
+              "mahalanobis_2d": 18.03295455470503,
+              "deployed_iara_q_poisoned": 1.019579435752359,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7863597290855314
+            },
+            {
+              "client": "prague_b",
+              "mu": 0.6839877882599831,
+              "sigma": 0.09260419825091958,
+              "z_mu_vs_others": 17.472623223647442,
+              "z_sigma_vs_others": -4.31553574599126,
+              "mahalanobis_2d": 17.997677936069206,
+              "deployed_iara_q_poisoned": 1.0194846214275546,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7694301983313327
+            },
+            {
+              "client": "roma_a",
+              "mu": 0.6916558519005775,
+              "sigma": 0.09801567384973169,
+              "z_mu_vs_others": 17.239903657186584,
+              "z_sigma_vs_others": -3.556749077025908,
+              "mahalanobis_2d": 17.602975376509505,
+              "deployed_iara_q_poisoned": 0.9824739086045606,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.725635864458819
+            },
+            {
+              "client": "roma_b",
+              "mu": 0.6989105498790741,
+              "sigma": 0.10122916378080844,
+              "z_mu_vs_others": 17.227341212653855,
+              "z_sigma_vs_others": -3.1668545828905117,
+              "mahalanobis_2d": 17.515999920255098,
+              "deployed_iara_q_poisoned": 0.9516240788335372,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.692923556802107
+            },
+            {
+              "client": "zagreb_a",
+              "mu": 0.7204280191659928,
+              "sigma": 0.11415523733943701,
+              "z_mu_vs_others": 18.006599238932544,
+              "z_sigma_vs_others": -2.1409154060921396,
+              "mahalanobis_2d": 18.13342590156556,
+              "deployed_iara_q_poisoned": 0.8447598380180532,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6465658106933296
+            },
+            {
+              "client": "zagreb_b",
+              "mu": 0.7181681352853775,
+              "sigma": 0.11337316252291202,
+              "z_mu_vs_others": 17.86847554608466,
+              "z_sigma_vs_others": -2.202336070872152,
+              "mahalanobis_2d": 18.003685803470635,
+              "deployed_iara_q_poisoned": 0.8504930753390604,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6518711897996767
+            }
+          ],
+          "median_abs_z_mu": 17.50069640150485,
+          "median_mahalanobis": 18.00068186976992,
+          "deployed_iara_rejection_rate": 0.0
+        },
+        "darkness_injection": {
+          "per_client": [
+            {
+              "client": "budapest_a",
+              "mu": 0.05180247996351681,
+              "sigma": 0.1163017774745822,
+              "z_mu_vs_others": -7.0280874305955185,
+              "z_sigma_vs_others": -1.9962691164518647,
+              "mahalanobis_2d": 7.3061004179654025,
+              "deployed_iara_q_poisoned": 0.8020297615844527,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6021938643379148
+            },
+            {
+              "client": "budapest_b",
+              "mu": 0.05078471034299582,
+              "sigma": 0.11212539752945304,
+              "z_mu_vs_others": -7.005945291766593,
+              "z_sigma_vs_others": -2.282344270431733,
+              "mahalanobis_2d": 7.368335280102219,
+              "deployed_iara_q_poisoned": 0.8318601740412012,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6165553172439637
+            },
+            {
+              "client": "koeln_a",
+              "mu": 0.02993366837326903,
+              "sigma": 0.09308652147650719,
+              "z_mu_vs_others": -7.278836103770529,
+              "z_sigma_vs_others": -3.676452843561948,
+              "mahalanobis_2d": 8.154615903676154,
+              "deployed_iara_q_poisoned": 0.9867851511037551,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6686215685998653
+            },
+            {
+              "client": "koeln_b",
+              "mu": 0.031799997607013214,
+              "sigma": 0.09510167024098337,
+              "z_mu_vs_others": -7.154009469610659,
+              "z_sigma_vs_others": -3.505449795897745,
+              "mahalanobis_2d": 7.966682481612941,
+              "deployed_iara_q_poisoned": 0.9798239012872488,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6549426059757296
+            },
+            {
+              "client": "leipzig_a",
+              "mu": 0.04241365343332291,
+              "sigma": 0.09631005597903448,
+              "z_mu_vs_others": -6.462810617449472,
+              "z_sigma_vs_others": -3.46707292078755,
+              "mahalanobis_2d": 7.334065428878852,
+              "deployed_iara_q_poisoned": 0.9680505392176251,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6004621224217175
+            },
+            {
+              "client": "leipzig_b",
+              "mu": 0.041748325745849045,
+              "sigma": 0.09581943973898888,
+              "z_mu_vs_others": -6.474729646352989,
+              "z_sigma_vs_others": -3.4991665622622214,
+              "mahalanobis_2d": 7.359775174814534,
+              "deployed_iara_q_poisoned": 0.9729743395017191,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6015659381975682
+            },
+            {
+              "client": "lyon_a",
+              "mu": 0.045889226944418625,
+              "sigma": 0.10985991609282791,
+              "z_mu_vs_others": -6.430972320457496,
+              "z_sigma_vs_others": -2.495777324704101,
+              "mahalanobis_2d": 6.898283079215989,
+              "deployed_iara_q_poisoned": 0.8488039159022895,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5922847866284693
+            },
+            {
+              "client": "lyon_b",
+              "mu": 0.04411176547640935,
+              "sigma": 0.10957287373021245,
+              "z_mu_vs_others": -6.436857104340353,
+              "z_sigma_vs_others": -2.5180613270615835,
+              "mahalanobis_2d": 6.9118566412028555,
+              "deployed_iara_q_poisoned": 0.8509508906170535,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5918881670646632
+            },
+            {
+              "client": "prague_a",
+              "mu": 0.019284761716262436,
+              "sigma": 0.07588328586891294,
+              "z_mu_vs_others": -7.755992030005723,
+              "z_sigma_vs_others": -5.897645378855507,
+              "mahalanobis_2d": 9.743594479669605,
+              "deployed_iara_q_poisoned": 0.9862528025490308,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7863597290855314
+            },
+            {
+              "client": "prague_b",
+              "mu": 0.019204748979536817,
+              "sigma": 0.07833116685040295,
+              "z_mu_vs_others": -7.8077522840643905,
+              "z_sigma_vs_others": -5.466905898938973,
+              "mahalanobis_2d": 9.531424648874188,
+              "deployed_iara_q_poisoned": 0.9862488026684765,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7694301983313327
+            },
+            {
+              "client": "roma_a",
+              "mu": 0.025335832750424742,
+              "sigma": 0.08414408659562468,
+              "z_mu_vs_others": -7.312190479401304,
+              "z_sigma_vs_others": -4.59511656206816,
+              "mahalanobis_2d": 8.636158047768705,
+              "deployed_iara_q_poisoned": 0.9865553001714605,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.725635864458819
+            },
+            {
+              "client": "roma_b",
+              "mu": 0.02891876486944966,
+              "sigma": 0.0903333769645542,
+              "z_mu_vs_others": -7.031625122191994,
+              "z_sigma_vs_others": -3.954173850035548,
+              "mahalanobis_2d": 8.067170674737614,
+              "deployed_iara_q_poisoned": 0.9867344148243741,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.692923556802107
+            },
+            {
+              "client": "zagreb_a",
+              "mu": 0.039940763526246884,
+              "sigma": 0.0954671679250896,
+              "z_mu_vs_others": -6.546011566277242,
+              "z_sigma_vs_others": -3.468410053831037,
+              "mahalanobis_2d": 7.4081128317103575,
+              "deployed_iara_q_poisoned": 0.976475182288339,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6465658106933296
+            },
+            {
+              "client": "zagreb_b",
+              "mu": 0.039019051503855734,
+              "sigma": 0.09412196011748165,
+              "z_mu_vs_others": -6.568697685114135,
+              "z_sigma_vs_others": -3.5693889832008394,
+              "mahalanobis_2d": 7.4758495832794365,
+              "deployed_iara_q_poisoned": 0.9872393436255679,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6518711897996767
+            }
+          ],
+          "median_abs_z_mu": 7.017016361181056,
+          "median_mahalanobis": 7.441981207494897,
+          "deployed_iara_rejection_rate": 0.0
+        },
+        "noise_storm": {
+          "per_client": [
+            {
+              "client": "budapest_a",
+              "mu": 0.2723730980270363,
+              "sigma": 0.1816661756121553,
+              "z_mu_vs_others": 2.278448259486017,
+              "z_sigma_vs_others": 2.810872173146403,
+              "mahalanobis_2d": 3.618332329253857,
+              "deployed_iara_q_poisoned": 0.5191888837144377,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6021938643379148
+            },
+            {
+              "client": "budapest_b",
+              "mu": 0.27120855191258153,
+              "sigma": 0.1785783151906962,
+              "z_mu_vs_others": 2.203358584775941,
+              "z_sigma_vs_others": 2.517026164634419,
+              "mahalanobis_2d": 3.3451770904632374,
+              "deployed_iara_q_poisoned": 0.5281355236024059,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6165553172439637
+            },
+            {
+              "client": "koeln_a",
+              "mu": 0.19960949004619402,
+              "sigma": 0.16591510733256443,
+              "z_mu_vs_others": -0.9217186165646303,
+              "z_sigma_vs_others": 1.512781375970878,
+              "mahalanobis_2d": 1.7714606119262597,
+              "deployed_iara_q_poisoned": 0.566407057037024,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6686215685998653
+            },
+            {
+              "client": "koeln_b",
+              "mu": 0.20173009653182958,
+              "sigma": 0.16835839038156897,
+              "z_mu_vs_others": -0.8305323963243929,
+              "z_sigma_vs_others": 1.6975935345598685,
+              "mahalanobis_2d": 1.8898698023736467,
+              "deployed_iara_q_poisoned": 0.5582466491580178,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6549426059757296
+            },
+            {
+              "client": "leipzig_a",
+              "mu": 0.22267623864490685,
+              "sigma": 0.17943738087060254,
+              "z_mu_vs_others": 0.008496722691858347,
+              "z_sigma_vs_others": 2.647728279067782,
+              "mahalanobis_2d": 2.64774191228521,
+              "deployed_iara_q_poisoned": 0.5243301523339204,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6004621224217175
+            },
+            {
+              "client": "leipzig_b",
+              "mu": 0.22495380245155291,
+              "sigma": 0.17921221234916454,
+              "z_mu_vs_others": 0.09721616306729239,
+              "z_sigma_vs_others": 2.625517854985797,
+              "mahalanobis_2d": 2.627317070551392,
+              "deployed_iara_q_poisoned": 0.5250489342396822,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6015659381975682
+            },
+            {
+              "client": "lyon_a",
+              "mu": 0.24560019449921733,
+              "sigma": 0.1826787829805391,
+              "z_mu_vs_others": 0.9235845456012114,
+              "z_sigma_vs_others": 2.9453018704708422,
+              "mahalanobis_2d": 3.0867153288038143,
+              "deployed_iara_q_poisoned": 0.5156190701828162,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5922847866284693
+            },
+            {
+              "client": "lyon_b",
+              "mu": 0.24068824955555015,
+              "sigma": 0.18225240181998445,
+              "z_mu_vs_others": 0.7198448681985579,
+              "z_sigma_vs_others": 2.9152231799779864,
+              "mahalanobis_2d": 3.002782513495235,
+              "deployed_iara_q_poisoned": 0.5166981195542343,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.5918881670646632
+            },
+            {
+              "client": "prague_a",
+              "mu": 0.19617992030238487,
+              "sigma": 0.1498037443256032,
+              "z_mu_vs_others": -1.0673350452301604,
+              "z_sigma_vs_others": 0.29314218145454785,
+              "mahalanobis_2d": 1.1068588154432342,
+              "deployed_iara_q_poisoned": 0.6272155356745449,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7863597290855314
+            },
+            {
+              "client": "prague_b",
+              "mu": 0.19470815076568207,
+              "sigma": 0.1517374231118601,
+              "z_mu_vs_others": -1.1337073131865085,
+              "z_sigma_vs_others": 0.45459529638619617,
+              "mahalanobis_2d": 1.221453705823117,
+              "deployed_iara_q_poisoned": 0.6191768226421259,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.7694301983313327
+            },
+            {
+              "client": "roma_a",
+              "mu": 0.20442922597252128,
+              "sigma": 0.1577805628675231,
+              "z_mu_vs_others": -0.7130823582944239,
+              "z_sigma_vs_others": 0.9169940041676086,
+              "mahalanobis_2d": 1.1616214759507855,
+              "deployed_iara_q_poisoned": 0.5957528023901032,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.725635864458819
+            },
+            {
+              "client": "roma_b",
+              "mu": 0.21273222649746298,
+              "sigma": 0.16291102080602748,
+              "z_mu_vs_others": -0.37613370081374725,
+              "z_sigma_vs_others": 1.2902181635029841,
+              "mahalanobis_2d": 1.3439268842912766,
+              "deployed_iara_q_poisoned": 0.5772318500789854,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.692923556802107
+            },
+            {
+              "client": "zagreb_a",
+              "mu": 0.23508430105669695,
+              "sigma": 0.17230262357309264,
+              "z_mu_vs_others": 0.4949481114063094,
+              "z_sigma_vs_others": 1.9895457075594856,
+              "mahalanobis_2d": 2.0501867611154467,
+              "deployed_iara_q_poisoned": 0.5463816211359599,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6465658106933296
+            },
+            {
+              "client": "zagreb_b",
+              "mu": 0.23246838806929448,
+              "sigma": 0.17108299478589814,
+              "z_mu_vs_others": 0.39200514435602596,
+              "z_sigma_vs_others": 1.8957141497655634,
+              "mahalanobis_2d": 1.9358202837099734,
+              "deployed_iara_q_poisoned": 0.5502044963883116,
+              "deployed_iara_rejects": false,
+              "deployed_iara_q_benign": 0.6518711897996767
+            }
+          ],
+          "median_abs_z_mu": 0.7751886322614754,
+          "median_mahalanobis": 1.99300352241271,
+          "deployed_iara_rejection_rate": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "healthy": {
+    "G_client_macro": 0.6808120134614236,
+    "G_client_weighted": 0.6745164905012955,
+    "L_client_macro": 0.6284472396851849
+  },
+  "damaged": {
+    "G_client_macro": 0.0006412961154717925,
+    "G_client_weighted": 0.0006637825979466585,
+    "L_client_macro": 0.6393691466078607
+  }
+}

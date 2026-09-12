@@ -1,0 +1,27 @@
+{
+  "brightness_flood": {
+    "n_compared": 40,
+    "n_file_bytes_differ": 40,
+    "n_pixels_differ": 40,
+    "mean_abs_pixel_delta": 0.48823,
+    "max_abs_pixel_delta": 0.49974
+  },
+  "darkness_injection": {
+    "n_compared": 40,
+    "n_file_bytes_differ": 40,
+    "n_pixels_differ": 40,
+    "mean_abs_pixel_delta": 0.17646,
+    "max_abs_pixel_delta": 0.22089
+  },
+  "noise_storm": {
+    "n_compared": 40,
+    "n_file_bytes_differ": 40,
+    "n_pixels_differ": 40,
+    "mean_abs_pixel_delta": 0.04994,
+    "max_abs_pixel_delta": 0.05166
+  },
+  "_original_pipeline": {
+    "poison_data_call_sites": 0,
+    "note": "attack code present and configured; no call site, so no corrupted tensor is constructed at all. Execution is zero by construction, not merely ineffective."
+  }
+}

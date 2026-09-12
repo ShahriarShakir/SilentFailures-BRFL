@@ -1,0 +1,379 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.simulation.start_simulation() is deprecated.
+	Instead, use the `flwr run` CLI command to start a local simulation in your Flower app, as shown for example below:
+
+		$ flwr new  # Create a new Flower app from a template
+
+		$ flwr run  # Run the Flower app in Simulation Mode
+
+	Using `start_simulation()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower simulation, config: num_rounds=30, no round_timeout
+2026-05-08 20:58:36,327	INFO worker.py:2012 -- Started a local Ray instance.
+/ANON/miniconda3/envs/federatedlearning/lib/python3.10/site-packages/ray/_private/worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[92mINFO [0m:      Flower VCE: Ray initialized with resources: {'node:__internal_head__': 1.0, 'GPU': 1.0, 'memory': 86969223578.0, 'CPU': 14.0, 'TPU': 1.0, 'object_store_memory': 37272524390.0, 'node:131.236.54.229': 1.0}
+INFO:flwr:Flower VCE: Ray initialized with resources: {'node:__internal_head__': 1.0, 'GPU': 1.0, 'memory': 86969223578.0, 'CPU': 14.0, 'TPU': 1.0, 'object_store_memory': 37272524390.0, 'node:131.236.54.229': 1.0}
+[92mINFO [0m:      Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+INFO:flwr:Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[92mINFO [0m:      Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0.14}
+INFO:flwr:Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0.14}
+[92mINFO [0m:      Flower VCE: Creating VirtualClientEngineActorPool with 7 actors
+INFO:flwr:Flower VCE: Creating VirtualClientEngineActorPool with 7 actors
+[92mINFO [0m:      [INIT]
+INFO:flwr:[INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+INFO:flwr:Requesting initial parameters from one random client
+[36m(ClientAppActor pid=1133209)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=1133209)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=1133209)[0m         
+[92mINFO [0m:      Received initial parameters from one random client
+INFO:flwr:Received initial parameters from one random client
+[92mINFO [0m:      Starting evaluation of initial global parameters
+INFO:flwr:Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+INFO:flwr:Evaluation returned no results (`None`)
+[92mINFO [0m:      
+INFO:flwr:
+[92mINFO [0m:      [ROUND 1]
+INFO:flwr:[ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 7 clients (out of 7)
+INFO:flwr:configure_fit: strategy sampled 7 clients (out of 7)
+[36m(ClientAppActor pid=1133209)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=1133209)[0m [93mWARNING [0m:   DEPRECATED FEATURE: `client_fn` now expects a signature `def client_fn(context: Context)`.The provided `client_fn` has signature: {'cid': <Parameter "cid: str">}. You can import the `Context` like this: `from flwr.common import Context`
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m             This is a deprecated feature. It will be removed
+[36m(ClientAppActor pid=1133209)[0m             entirely in future versions of Flower.
+[36m(ClientAppActor pid=1133209)[0m         
+[36m(ClientAppActor pid=1133209)[0m [93mWARNING [0m:   Deprecation Warning: The `client_fn` function must return an instance of `Client`, but an instance of `NumpyClient` was returned. Please use `NumPyClient.to_client()` method to convert it to `Client`.
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133179)[0m         
+[36m(ClientAppActor pid=1133213)[0m 
+[36m(ClientAppActor pid=1133213)[0m         
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133171)[0m         
+[plan] experiment K_feature_poisoning: 7 runs
+  [run ] K_feature_poisoning/fedavg_s1
+[Client PID=1132908] Ultralytics cache patched v3 (utils + dataset modules)
+
+============================================================
+FL STRATEGY: FedAvg (Baseline)
+============================================================
+Simple weighted averaging by num_samples
+
+  [atk ] feature_poisoning ratio=0.3 -> malicious=[0, 1]
+[36m(ClientAppActor pid=1133209)[0m [Client PID=1133209] Ultralytics cache patched v3 (utils + dataset modules)
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m [Client 5] Initializing YOLOv10-S...
+[36m(ClientAppActor pid=1133209)[0m [Client 5] Ready
+[36m(ClientAppActor pid=1133209)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_roma.yaml
+[36m(ClientAppActor pid=1133209)[0m   Local epochs: 3
+[36m(ClientAppActor pid=1133209)[0m   Batch size: 4
+[36m(ClientAppActor pid=1133209)[0m   FedBN: False
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m [Client 4] Initializing YOLOv10-S...
+[36m(ClientAppActor pid=1133209)[0m [Client 4] Ready
+[36m(ClientAppActor pid=1133209)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_prague.yaml
+[36m(ClientAppActor pid=1133209)[0m   Local epochs: 3
+[36m(ClientAppActor pid=1133209)[0m   Batch size: 4
+[36m(ClientAppActor pid=1133209)[0m   FedBN: False
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m [Client 4] Starting local training (seed=1004)...
+[36m(ClientAppActor pid=1133209)[0m New https://pypi.org/project/ultralytics/8.4.47 available Update with 'pip install -U ultralytics'
+[36m(ClientAppActor pid=1133209)[0m Ultralytics 8.3.234 Python-3.10.19 torch-2.6.0+cu124 CUDA:0 (NVIDIA RTX 5000 Ada Generation, 32220MiB)
+[36m(ClientAppActor pid=1133209)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_prague.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_4_1133209.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133209, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133209/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1004, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133209)[0m Overriding model.yaml nc=80 with nc=1
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m                    from  n    params  module                                       arguments                     
+[36m(ClientAppActor pid=1133209)[0m   0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+[36m(ClientAppActor pid=1133209)[0m   1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+[36m(ClientAppActor pid=1133209)[0m   2                  -1  1     29056  ultralytics.nn.modules.block.C2f             [64, 64, 1, True]             
+[36m(ClientAppActor pid=1133209)[0m   3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+[36m(ClientAppActor pid=1133209)[0m   4                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+[36m(ClientAppActor pid=1133209)[0m   5                  -1  1     36096  ultralytics.nn.modules.block.SCDown          [128, 256, 3, 2]              
+[36m(ClientAppActor pid=1133209)[0m   6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]           
+[36m(ClientAppActor pid=1133209)[0m   7                  -1  1    137728  ultralytics.nn.modules.block.SCDown          [256, 512, 3, 2]              
+[36m(ClientAppActor pid=1133209)[0m   8                  -1  1    958464  ultralytics.nn.modules.block.C2fCIB          [512, 512, 1, True, True]     
+[36m(ClientAppActor pid=1133209)[0m   9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+[36m(ClientAppActor pid=1133209)[0m  10                  -1  1    990976  ultralytics.nn.modules.block.PSA             [512, 512]                    
+[36m(ClientAppActor pid=1133209)[0m  11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+[36m(ClientAppActor pid=1133209)[0m  12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+[36m(ClientAppActor pid=1133209)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133209)[0m  14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+[36m(ClientAppActor pid=1133209)[0m  15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+[36m(ClientAppActor pid=1133209)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133209)[0m  17                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+[36m(ClientAppActor pid=1133209)[0m  18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+[36m(ClientAppActor pid=1133209)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133209)[0m  20                  -1  1     68864  ultralytics.nn.modules.block.SCDown          [256, 256, 3, 2]              
+[36m(ClientAppActor pid=1133209)[0m  21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+[36m(ClientAppActor pid=1133209)[0m  22                  -1  1   1089536  ultralytics.nn.modules.block.C2fCIB          [768, 512, 1, True, True]     
+[36m(ClientAppActor pid=1133209)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133209)[0m YOLOv10s summary: 234 layers, 8,067,126 parameters, 8,067,110 gradients, 24.8 GFLOPs
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m Transferred 607/619 items from pretrained weights
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133209)[0m Freezing layer 'model.23.dfl.conv.weight'
+[36m(ClientAppActor pid=1133209)[0m [34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[36m(ClientAppActor pid=1133179)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_zagreb.yaml
+[36m(ClientAppActor pid=1133213)[0m 
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133173)[0m 
+[36m(ClientAppActor pid=1133173)[0m         
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133210)[0m         
+[36m(ClientAppActor pid=1133211)[0m 
+[36m(ClientAppActor pid=1133211)[0m         
+[36m(ClientAppActor pid=1133171)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_leipzig.yaml
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133211)[0m 
+[36m(ClientAppActor pid=1133211)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_lyon.yaml
+[36m(ClientAppActor pid=1133173)[0m 
+[36m(ClientAppActor pid=1133213)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_koeln.yaml
+[36m(ClientAppActor pid=1133213)[0m [Client 1] ️  MALICIOUS - Attack: FeaturePoisoningAttack
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133210)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_budapest.yaml
+[36m(ClientAppActor pid=1133179)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_zagreb.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_6_1133179.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133179, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133179/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1006, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133211)[0m 
+[36m(ClientAppActor pid=1133173)[0m 
+[36m(ClientAppActor pid=1133213)[0m 
+[36m(ClientAppActor pid=1133213)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_koeln.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_1_1133213.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133213, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133213/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1001, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133171)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_leipzig.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_2_1133171.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133171, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133171/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1002, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133179)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133179)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133179)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133179)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133211)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_lyon.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_3_1133211.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133211, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133211/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1003, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133173)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_roma.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_5_1133173.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133173, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133173/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1005, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133213)[0m 
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133171)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133171)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133171)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133210)[0m [34m[1mengine/trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=4, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/ANON/fl_hod/data/yolo/client_configs/client_budapest.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=3, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.001, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/tmp/fl_yolo_models/yolov10s_client_0_1133210.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train, nbs=64, nms=False, opset=None, optimize=False, optimizer=AdamW, overlap_mask=True, patience=100, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/tmp/fl_yolo_runs_1133210, rect=False, resume=False, retina_masks=False, save=False, save_conf=False, save_crop=False, save_dir=/tmp/fl_yolo_runs_1133210/train, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1000, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=False, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+[36m(ClientAppActor pid=1133211)[0m 
+[36m(ClientAppActor pid=1133211)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133211)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133211)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133173)[0m 
+[36m(ClientAppActor pid=1133173)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133173)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133173)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133173)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133213)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133213)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133213)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133213)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133171)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133210)[0m  13                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+[36m(ClientAppActor pid=1133210)[0m  16                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+[36m(ClientAppActor pid=1133210)[0m  19                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+[36m(ClientAppActor pid=1133210)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133211)[0m  23        [16, 19, 22]  1   1639574  ultralytics.nn.modules.head.v10Detect        [1, [128, 256, 512]]          
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133211)[0m 
+[36m(ClientAppActor pid=1133173)[0m 
+[36m(ClientAppActor pid=1133213)[0m 
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133209)[0m [34m[1mAMP: [0mchecks passed [36m(ClientAppActor pid=1133209)[0m [34m[1mtrain: [0mFast image access (ping: 0.0±0.0 ms, read: 5823.6±1175.7 MB/s, size: 2251.8 KB)
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 77 images, 0 backgrounds, 0 corrupt: 18% ━━────────── 77/422 226.7it/s 0.1s<1.5s
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 172 images, 0 backgrounds, 0 corrupt: 41% ━━━━╸─────── 172/422 441.5it/s 0.2s<0.6s
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 260 images, 0 backgrounds, 0 corrupt: 62% ━━━━━━━───── 260/422 572.9it/s 0.3s<0.3s
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 348 images, 0 backgrounds, 0 corrupt: 82% ━━━━━━━━━╸── 348/422 662.6it/s 0.4s<0.1s
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 422 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 422/422 880.1it/s 0.5s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 422 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 422/422 880.0it/s 0.5s
+[36m(ClientAppActor pid=1133209)[0m [34m[1mval: [0mFast image access (ping: 0.0±0.0 ms, read: 3833.3±1966.5 MB/s, size: 2349.8 KB)
+[36m(ClientAppActor pid=1133209)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 45 images, 0 backgrounds, 0 corrupt: 65% ━━━━━━━╸──── 45/69 133.9it/s 0.1s<0.2s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 69 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 69/69 548.2it/s 0.1s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 69 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 69/69 547.8it/s 0.1s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 65 images, 0 backgrounds, 0 corrupt: 14% ━╸────────── 65/457 191.3it/s 0.1s<2.0s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 138 images, 0 backgrounds, 0 corrupt: 30% ━━━╸──────── 138/457 349.6it/s 0.2s<0.9s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 210 images, 0 backgrounds, 0 corrupt: 46% ━━━━━╸────── 210/457 459.9it/s 0.3s<0.5s
+[36m(ClientAppActor pid=1133210)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 34 images, 0 backgrounds, 0 corrupt: 7% ╸─────────── 34/475 99.7it/s 0.1s<4.4s
+[36m(ClientAppActor pid=1133211)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 43 images, 0 backgrounds, 0 corrupt: 9% ━─────────── 43/477 109.5it/s 0.1s<4.0s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 253 images, 0 backgrounds, 0 corrupt: 55% ━━━━━━╸───── 253/457 424.0it/s 0.4s<0.5s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 314 images, 0 backgrounds, 0 corrupt: 69% ━━━━━━━━──── 314/457 476.2it/s 0.5s<0.3s
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 128 images, 0 backgrounds, 0 corrupt: 26% ━━━───────── 128/496 263.4it/s 0.3s<1.4s
+[36m(ClientAppActor pid=1133171)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 150 images, 0 backgrounds, 0 corrupt: 88% ━━━━━━━━━━╸─ 150/170 312.2it/s 0.3s<0.1s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 170 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 170/170 520.0it/s 0.3s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 170 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 170/170 520.0it/s 0.3s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 383 images, 0 backgrounds, 0 corrupt: 84% ━━━━━━━━━━── 383/457 512.8it/s 0.6s<0.1s
+[36m(ClientAppActor pid=1133210)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 199 images, 0 backgrounds, 0 corrupt: 42% ━━━━━─────── 199/475 345.8it/s 0.5s<0.8s
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 434 images, 0 backgrounds, 0 corrupt: 95% ━━━━━━━━━━━─ 434/457 473.5it/s 0.8s<0.0s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 457 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 457/457 584.2it/s 0.8s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 457 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 457/457 584.2it/s 0.8s
+[36m(ClientAppActor pid=1133210)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 246 images, 0 backgrounds, 0 corrupt: 52% ━━━━━━────── 246/475 354.7it/s 0.6s<0.6s
+[36m(ClientAppActor pid=1133171)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 15 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 15/15 522.9it/s 0.0s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 15 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 15/15 260.0it/s 0.1s
+[36m(ClientAppActor pid=1133211)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 328 images, 0 backgrounds, 0 corrupt: 69% ━━━━━━━━──── 328/477 504.9it/s 0.7s<0.3s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 391 images, 0 backgrounds, 0 corrupt: 82% ━━━━━━━━━╸── 391/477 542.0it/s 0.8s<0.2s
+[36m(ClientAppActor pid=1133210)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 412 images, 0 backgrounds, 0 corrupt: 87% ━━━━━━━━━━── 412/475 559.8it/s 0.8s<0.1s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 475 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 475/475 551.5it/s 0.9s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 475 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 475/475 551.5it/s 0.9s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 467 images, 0 backgrounds, 0 corrupt: 65% ━━━━━━━╸──── 467/724 484.5it/s 1.0s<0.5s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 526 images, 0 backgrounds, 0 corrupt: 73% ━━━━━━━━╸─── 526/724 500.0it/s 1.1s<0.4s
+[36m(ClientAppActor pid=1133211)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 13 images, 0 backgrounds, 0 corrupt: 11% ━─────────── 13/115 37.4it/s 0.1s<2.7s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 705 images, 0 backgrounds, 0 corrupt: 97% ━━━━━━━━━━━╸ 705/724 540.7it/s 1.5s<0.0s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 724 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 724/724 491.4it/s 1.5s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 724 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 724/724 491.4it/s 1.5s
+[36m(ClientAppActor pid=1133210)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 29 images, 0 backgrounds, 0 corrupt: 34% ━━━━──────── 29/86 77.8it/s 0.1s<0.7s
+[36m(ClientAppActor pid=1133211)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 71 images, 0 backgrounds, 0 corrupt: 62% ━━━━━━━───── 71/115 163.2it/s 0.2s<0.3s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 115 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 115/115 447.7it/s 0.3s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 115 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 115/115 447.6it/s 0.3s
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 1 images, 0 backgrounds, 0 corrupt: 1% ──────────── 1/82 1.8it/s 0.2s<44.6s
+[36m(ClientAppActor pid=1133173)[0m [Client PID=1133173] Ultralytics cache patched v3 (utils + dataset modules)[32m [repeated 6x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(ClientAppActor pid=1133210)[0m [Client 0] Initializing YOLOv10-S...[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m [Client 0] Ready[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m   Data: /ANON/fl_hod/data/yolo/client_configs/client_roma.yaml
+[36m(ClientAppActor pid=1133210)[0m   Local epochs: 3[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m   Batch size: 4[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m   FedBN: False[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m [Client 0] Starting local training (seed=1000)...[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m New https://pypi.org/project/ultralytics/8.4.47 available Update with 'pip install -U ultralytics'[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m Ultralytics 8.3.234 Python-3.10.19 torch-2.6.0+cu124 CUDA:0 (NVIDIA RTX 5000 Ada Generation, 32220MiB)[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 17 images, 0 backgrounds, 0 corrupt: 21% ━━────────── 17/82 27.1it/s 0.5s<2.4s
+[36m(ClientAppActor pid=1133209)[0m [34m[1moptimizer:[0m AdamW(lr=0.001, momentum=0.937) with parameter groups 99 weight(decay=0.0), 112 weight(decay=0.0005), 111 bias(decay=0.0)
+[36m(ClientAppActor pid=1133209)[0m Image sizes 640 train, 640 val
+[36m(ClientAppActor pid=1133209)[0m Using 8 dataloader workers
+[36m(ClientAppActor pid=1133209)[0m Logging results to [1m/tmp/fl_yolo_runs_1133209/train[0m
+[36m(ClientAppActor pid=1133209)[0m Starting training for 3 epochs...
+[36m(ClientAppActor pid=1133209)[0m 
+[36m(ClientAppActor pid=1133209)[0m       Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+[36m(ClientAppActor pid=1133210)[0m Overriding model.yaml nc=80 with nc=1[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m                    from  n    params  module                                       arguments                     [32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  17                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              [32m [repeated 24x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m   6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]           [32m [repeated 18x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  20                  -1  1     68864  ultralytics.nn.modules.block.SCDown          [256, 256, 3, 2]              [32m [repeated 18x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  22                  -1  1   1089536  ultralytics.nn.modules.block.C2fCIB          [768, 512, 1, True, True]     [32m [repeated 12x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m   9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 [32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  10                  -1  1    990976  ultralytics.nn.modules.block.PSA             [512, 512]                    [32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          [32m [repeated 12x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m  21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           [32m [repeated 24x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 25 images, 0 backgrounds, 0 corrupt: 30% ━━━╸──────── 25/82 34.8it/s 0.6s<1.6s
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 32 images, 0 backgrounds, 0 corrupt: 39% ━━━━╸─────── 32/82 45.2it/s 0.7s<1.1s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 31 images, 0 backgrounds, 0 corrupt: 23% ━━╸───────── 31/133 81.9it/s 0.4s<1.2s
+[36m(ClientAppActor pid=1133210)[0m YOLOv10s summary: 234 layers, 8,067,126 parameters, 8,067,110 gradients, 24.8 GFLOPs[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133211)[0m Transferred 607/619 items from pretrained weights[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 39 images, 0 backgrounds, 0 corrupt: 48% ━━━━━╸────── 39/82 50.7it/s 0.8s<0.8s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 82 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 82/82 90.5it/s 0.9s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 82 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 82/82 90.5it/s 0.9s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 89 images, 0 backgrounds, 0 corrupt: 67% ━━━━━━━━──── 89/133 226.3it/s 0.5s<0.2s
+[36m(ClientAppActor pid=1133173)[0m Freezing layer 'model.23.dfl.conv.weight'[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m [34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...[32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m [Client 0] ️  MALICIOUS - Attack: FeaturePoisoningAttack
+[36m(ClientAppActor pid=1133209)[0m 
+[K        1/3      1.36G      6.056      12.54        2.6         53        640: 0% ──────────── 0/106  2.9s
+[36m(ClientAppActor pid=1133171)[0m [34m[1mAMP: [0mchecks passed [32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m [34m[1mval: [0mFast image access (ping: 0.0±0.0 ms, read: 549.8±672.8 MB/s, size: 2299.0 KB)[32m [repeated 12x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 143 images, 0 backgrounds, 0 corrupt: 20% ━━────────── 143/724 307.0it/s 0.3s<1.9s[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 188 images, 0 backgrounds, 0 corrupt: 38% ━━━━╸─────── 188/496 335.5it/s 0.4s<0.9s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 583 images, 0 backgrounds, 0 corrupt: 81% ━━━━━━━━━╸── 583/724 506.2it/s 1.2s<0.3s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 496 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 496/496 480.8it/s 1.0s
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 496 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 496/496 480.8it/s 1.0s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133179)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 53 images, 0 backgrounds, 0 corrupt: 66% ━━━━━━━╸──── 53/80 157.2it/s 0.1s<0.2s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 80 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 80/80 656.5it/s 0.1s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 80 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 80/80 656.2it/s 0.1s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 239 images, 0 backgrounds, 0 corrupt: 33% ━━━╸──────── 239/724 367.4it/s 0.6s<1.3s[32m [repeated 4x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 344 images, 0 backgrounds, 0 corrupt: 48% ━━━━━╸────── 344/724 425.0it/s 0.8s<0.9s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 42 images, 0 backgrounds, 0 corrupt: 6% ╸─────────── 42/724 124.0it/s 0.1s<5.5s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 74 images, 0 backgrounds, 0 corrupt: 10% ━─────────── 74/724 160.8it/s 0.2s<4.0s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 413 images, 0 backgrounds, 0 corrupt: 57% ━━━━━━╸───── 413/724 473.9it/s 0.9s<0.7s[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 345 images, 0 backgrounds, 0 corrupt: 70% ━━━━━━━━──── 345/496 450.7it/s 0.8s<0.3s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 185 images, 0 backgrounds, 0 corrupt: 26% ━━━───────── 185/724 307.4it/s 0.5s<1.8s
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 630 images, 0 backgrounds, 0 corrupt: 87% ━━━━━━━━━━── 630/724 461.1it/s 1.4s<0.2s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 303 images, 0 backgrounds, 0 corrupt: 42% ━━━━━─────── 303/724 436.6it/s 0.7s<1.0s[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133211)[0m 
+[K[34m[1mtrain: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/train... 243 images, 0 backgrounds, 0 corrupt: 51% ━━━━━━────── 243/477 366.1it/s 0.6s<0.6s
+[36m(ClientAppActor pid=1133179)[0m 
+[36m(ClientAppActor pid=1133171)[0m 
+[36m(ClientAppActor pid=1133209)[0m 
+[K        1/3      1.36G      5.068      30.59      2.532          8        640: 1% ──────────── 1/106 2.2s/it 3.6s<3:51
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 133 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 133/133 246.9it/s 0.5s
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 133 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 133/133 246.8it/s 0.5s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m 
+[36m(ClientAppActor pid=1133209)[0m 
+[K        1/3      1.36G      4.556      24.01      2.408         49        640: 2% ──────────── 2/106 1.1s/it 4.1s<1:58
+[36m(ClientAppActor pid=1133213)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 9 images, 0 backgrounds, 0 corrupt: 11% ━─────────── 9/82 17.4it/s 0.3s<4.2s
+[36m(ClientAppActor pid=1133209)[0m 
+[K        1/3      1.36G      5.363       25.1      2.461         58        640: 3% ──────────── 3/106 1.2s/it 5.4s<2:00
+[36m(ClientAppActor pid=1133173)[0m 
+[K[34m[1mval: [0mScanning /ANON/fl_hod/data/yolo/labels/ecp/val... 3 images, 0 backgrounds, 0 corrupt: 2% ──────────── 3/133 6.8it/s 0.3s<19.0s[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m [34m[1moptimizer:[0m AdamW(lr=0.001, momentum=0.937) with parameter groups 99 weight(decay=0.0), 112 weight(decay=0.0005), 111 bias(decay=0.0)[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m Image sizes 640 train, 640 val[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m Using 8 dataloader workers[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m Logging results to [1m/tmp/fl_yolo_runs_1133210/train[0m[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m Starting training for 3 epochs...[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133210)[0m       Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size[32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=1133209)[0m 
+[K        1/3      1.36G      5.057       23.5      2.418         26        640: 4% ──────────── 4/106 1.6it/s 5.7s<1:02
+[36m(ClientAppActor pid=1133213)[0m 
+*** SIGTERM received at time=1778237930 on cpu 17 ***
+PC: @     0x7c04fc898d71  (unknown)  (unknown)
+    @     0x7c04fc845330  1502343936  (unknown)
+    @     0x7c04fc8a4fb8         96  (unknown)
+    @           0x4d6779  (unknown)  PyThread_acquire_lock_timed
+[2026-05-08 20:58:50,752 E 1132908 1132908] logging.cc:474: *** SIGTERM received at time=1778237930 on cpu 17 ***
+[2026-05-08 20:58:50,752 E 1132908 1132908] logging.cc:474: PC: @     0x7c04fc898d71  (unknown)  (unknown)
+[2026-05-08 20:58:50,752 E 1132908 1132908] logging.cc:474:     @     0x7c04fc845330  1502343936  (unknown)
+[2026-05-08 20:58:50,752 E 1132908 1132908] logging.cc:474:     @     0x7c04fc8a4fb8         96  (unknown)
+[2026-05-08 20:58:50,752 E 1132908 1132908] logging.cc:474:     @           0x4d6779  (unknown)  PyThread_acquire_lock_timed

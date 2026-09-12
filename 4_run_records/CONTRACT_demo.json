@@ -1,0 +1,127 @@
+{
+  "config": {
+    "strategy": "fedavg",
+    "attack": "none",
+    "alpha": 0.3,
+    "intensity": 1.0,
+    "rounds": 3,
+    "seed": 1,
+    "local_epochs": 3,
+    "batch": 4,
+    "imgsz": 640,
+    "tag": "CONTRACT_demo",
+    "strategy_kwargs": "{}",
+    "gpu_frac": 0.14,
+    "dos_only": 1,
+    "save_ckpt": "",
+    "asr_yaml": "",
+    "head": "matched",
+    "exchange": "full"
+  },
+  "malicious_clients": [
+    0,
+    1
+  ],
+  "wall_seconds": 318.0635356903076,
+  "global_eval": [
+    {
+      "round": 1,
+      "global_map50": 0.5702007901385931,
+      "global_map50_95": 0.2980095572450058,
+      "global_precision": 0.6624748692898198,
+      "global_recall": 0.49619445126442424,
+      "agg_state_hash": "8d0e83e5992016ba",
+      "n_tensors_received": 619
+    },
+    {
+      "round": 2,
+      "global_map50": 0.6036070540486406,
+      "global_map50_95": 0.32617366042179163,
+      "global_precision": 0.6688824137593318,
+      "global_recall": 0.5288485146083968,
+      "agg_state_hash": "7a5655ecf8a7b8ff",
+      "n_tensors_received": 619
+    },
+    {
+      "round": 3,
+      "global_map50": 0.6250325115655276,
+      "global_map50_95": 0.3408881906361423,
+      "global_precision": 0.695037184466407,
+      "global_recall": 0.5443162288239627,
+      "agg_state_hash": "c7b9cdada1938a55",
+      "n_tensors_received": 619
+    }
+  ],
+  "round_log": [
+    {
+      "round": 1,
+      "local_map50": 0.5194227561668152,
+      "local_map50_95": 0.26592224779067514,
+      "local_precision": 0.6175254257977185,
+      "local_recall": 0.4679420191249452,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "accepted_clients": "0,6,3,1,4,2,5",
+      "rejected_clients": "",
+      "order": "0,6,3,1,4,2,5"
+    },
+    {
+      "round": 2,
+      "local_map50": 0.5537133466163489,
+      "local_map50_95": 0.28451418545710394,
+      "local_precision": 0.6414514182196678,
+      "local_recall": 0.4859399093098933,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "accepted_clients": "4,1,0,6,2,5,3",
+      "rejected_clients": "",
+      "order": "4,1,0,6,2,5,3",
+      "update_norms": "4:71.77934,1:78.11700,0:80.87006,6:77.91959,2:40.87318,5:87.36833,3:75.84410"
+    },
+    {
+      "round": 3,
+      "local_map50": 0.5951693429349364,
+      "local_map50_95": 0.30948265460054997,
+      "local_precision": 0.6663414748316454,
+      "local_recall": 0.5243082782249369,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "accepted_clients": "6,4,2,0,1,3,5",
+      "rejected_clients": "",
+      "order": "6,4,2,0,1,3,5",
+      "update_norms": "6:69.14996,4:63.01234,2:36.29417,0:67.62363,1:70.69236,3:68.79906,5:79.58477"
+    }
+  ],
+  "timeline": [
+    {
+      "round": 1,
+      "step": "server_evaluates_aggregate_on_heldout",
+      "after": "aggregation",
+      "before": "next_round_client_fit",
+      "state_hash": "8d0e83e5992016ba"
+    },
+    {
+      "round": 2,
+      "step": "server_evaluates_aggregate_on_heldout",
+      "after": "aggregation",
+      "before": "next_round_client_fit",
+      "state_hash": "7a5655ecf8a7b8ff"
+    },
+    {
+      "round": 3,
+      "step": "server_evaluates_aggregate_on_heldout",
+      "after": "aggregation",
+      "before": "next_round_client_fit",
+      "state_hash": "c7b9cdada1938a55"
+    }
+  ],
+  "buffer_policy": {
+    "parameters": 322,
+    "float_buffers": 198,
+    "integer_counters": 99,
+    "other_buffers": 0
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "attack never applied": {
+    "kind": "fault",
+    "checks": {
+      "T1": true,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.9954427083333334,
+    "noattack_last3": 1.0,
+    "local_last3": 1.0
+  },
+  "head not shared": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.8743489583333334,
+    "noattack_last3": 1.0,
+    "local_last3": 0.6885850694444443
+  },
+  "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.3177083333333333,
+    "noattack_last3": 0.443359375,
+    "local_last3": 0.6944444444444445
+  },
+  "screen input constant": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": true,
+      "T3": true,
+      "T4": false,
+      "T5": true
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "screen inert": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": true,
+      "T3": true,
+      "T4": false,
+      "T5": false
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "screen reversed": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": true,
+      "T3": true,
+      "T4": false,
+      "T5": false
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": true,
+      "T3": true,
+      "T4": false,
+      "T5": false
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "seed ignored": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": true,
+      "T5": null
+    },
+    "global_last3": 0.8372395833333334,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.4524739583333333,
+    "noattack_last3": 1.0,
+    "local_last3": 0.7485677083333334
+  },
+  "healthy": {
+    "kind": "healthy",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  },
+  "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.3177083333333333,
+    "noattack_last3": 0.443359375,
+    "local_last3": 0.6944444444444445
+  },
+  "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+      "T1": true,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.9986979166666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.9939236111111112
+  },
+  "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+      "T1": false,
+      "T2": null,
+      "T3": true,
+      "T4": false,
+      "T5": null
+    },
+    "global_last3": 0.8776041666666666,
+    "noattack_last3": 1.0,
+    "local_last3": 0.701171875
+  }
+}

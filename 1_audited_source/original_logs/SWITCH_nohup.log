@@ -1,0 +1,6 @@
+nohup: ignoring input
+=== 2026-05-08T20:22:07+10:00 switch_to_priority: watching PID 697926 ===
+=== 2026-05-08T20:58:47+10:00 PID 697926 exited — killing chain PID 3588153 ===
+=== 2026-05-08T20:58:52+10:00 Old chain stopped. Launching run_priority_then_kl.sh ===
+=== 2026-05-08T20:58:52+10:00 Priority chain PID=1135334 ===
+Priority chain launched as PID 1135334
