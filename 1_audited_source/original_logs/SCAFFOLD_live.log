@@ -1,0 +1,50 @@
+nohup: ignoring input
+00:04:28 | round~10/50 | GPU: 99, 75, 11568 | s1:waiting s2:waiting | proc:Sl
+00:06:28 | round~11/50 | GPU: 14, 66, 6320 | s1:waiting s2:waiting | proc:Sl
+00:08:28 | round~13/50 | GPU: 99, 67, 13344 | s1:waiting s2:waiting | proc:Sl
+00:10:29 | round~14/50 | GPU: 99, 69, 13570 | s1:waiting s2:waiting | proc:Sl
+00:12:29 | round~15/50 | GPU: 99, 70, 12576 | s1:waiting s2:waiting | proc:Sl
+00:14:29 | round~16/50 | GPU: 99, 74, 12678 | s1:waiting s2:waiting | proc:Sl
+00:16:29 | round~17/50 | GPU: 99, 73, 11560 | s1:waiting s2:waiting | proc:Sl
+00:18:29 | round~18/50 | GPU: 14, 66, 6320 | s1:waiting s2:waiting | proc:Sl
+00:20:29 | round~20/50 | GPU: 55, 65, 13314 | s1:waiting s2:waiting | proc:Sl
+00:22:29 | round~21/50 | GPU: 99, 68, 13552 | s1:waiting s2:waiting | proc:Sl
+00:24:29 | round~22/50 | GPU: 99, 73, 12594 | s1:waiting s2:waiting | proc:Sl
+00:26:29 | round~23/50 | GPU: 99, 74, 12684 | s1:waiting s2:waiting | proc:Sl
+00:28:29 | round~24/50 | GPU: 99, 74, 11562 | s1:waiting s2:waiting | proc:Sl
+00:30:29 | round~25/50 | GPU: 0, 66, 6178 | s1:waiting s2:waiting | proc:Sl
+00:32:29 | round~27/50 | GPU: 99, 69, 13464 | s1:waiting s2:waiting | proc:Sl
+00:34:30 | round~28/50 | GPU: 99, 70, 13680 | s1:waiting s2:waiting | proc:Sl
+00:36:30 | round~29/50 | GPU: 99, 72, 12592 | s1:waiting s2:waiting | proc:Sl
+00:38:30 | round~30/50 | GPU: 100, 75, 12692 | s1:waiting s2:waiting | proc:Sl
+00:40:30 | round~31/50 | GPU: 97, 74, 9336 | s1:waiting s2:waiting | proc:Sl
+00:42:30 | round~33/50 | GPU: 7, 64, 8136 | s1:waiting s2:waiting | proc:Sl
+00:44:30 | round~34/50 | GPU: 99, 69, 13568 | s1:waiting s2:waiting | proc:Sl
+00:46:30 | round~35/50 | GPU: 99, 72, 12610 | s1:waiting s2:waiting | proc:Sl
+00:48:30 | round~36/50 | GPU: 99, 74, 12710 | s1:waiting s2:waiting | proc:Sl
+00:50:30 | round~37/50 | GPU: 99, 75, 12694 | s1:waiting s2:waiting | proc:Sl
+00:52:30 | round~38/50 | GPU: 64, 68, 6204 | s1:waiting s2:waiting | proc:Sl
+00:54:31 | round~40/50 | GPU: 43, 63, 13328 | s1:waiting s2:waiting | proc:Sl
+00:56:31 | round~41/50 | GPU: 99, 70, 13588 | s1:waiting s2:waiting | proc:Sl
+00:58:31 | round~42/50 | GPU: 99, 71, 12628 | s1:waiting s2:waiting | proc:Sl
+01:00:31 | round~43/50 | GPU: 99, 73, 12736 | s1:waiting s2:waiting | proc:Sl
+01:02:31 | round~44/50 | GPU: 99, 74, 11630 | s1:waiting s2:waiting | proc:Sl
+01:04:31 | round~46/50 | GPU: 0, 65, 6348 | s1:waiting s2:waiting | proc:Sl
+01:06:31 | round~47/50 | GPU: 99, 69, 13520 | s1:waiting s2:waiting | proc:Sl
+01:08:31 | round~48/50 | GPU: 99, 71, 13588 | s1:waiting s2:waiting | proc:Sl
+01:10:31 | round~48/50 | GPU: 99, 71, 12626 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:12:31 | round~48/50 | GPU: 99, 74, 12672 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:14:31 | round~48/50 | GPU: 99, 75, 12710 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:16:32 | round~48/50 | GPU: 10, 65, 6238 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:18:32 | round~48/50 | GPU: 99, 69, 13500 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:20:32 | round~48/50 | GPU: 99, 72, 13650 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:22:32 | round~48/50 | GPU: 99, 73, 12632 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl
+01:24:32 | round~48/50 | GPU: 100, 74, 12686 | s1:supplementary_experiments/results/J_scaffold_comparison/scaffold_s1.json
+DONE s2:waiting | proc:Sl

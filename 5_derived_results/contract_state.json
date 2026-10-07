@@ -1,0 +1,21 @@
+{
+  "hashes": {
+    "healthy r11": "edc96e84ea5ad372",
+    "healthy r12": "6e8f72a58023f3ec",
+    "damaged r11": "5639405d7678b9af",
+    "damaged r12": "6908cc4f40bd7573"
+  },
+  "policy": {
+    "parameters": 322,
+    "float_buffers": 198,
+    "integer_counters": 99,
+    "other_buffers": 0
+  },
+  "integer_counter_example": "model.0.bn.num_batches_tracked",
+  "metrics": {
+    "G_pool": "one model, all held-out images pooled into a single evaluation set, scored once",
+    "G_client_macro": "one model, scored on each client's held-out split, unweighted mean over clients",
+    "G_client_weighted": "as G_client_macro, weighted by each client's held-out image count",
+    "L_client_macro": "each client's own post-training model on its own held-out split, unweighted mean over clients. This is the reported quantity under audit."
+  }
+}

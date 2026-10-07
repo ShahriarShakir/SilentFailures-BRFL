@@ -1,0 +1,241 @@
+{
+  "config": {
+    "strategy": "fedavg",
+    "attack": "brightness_flood",
+    "alpha": 0.3,
+    "intensity": 1.0,
+    "rounds": 12,
+    "seed": 1,
+    "local_epochs": 3,
+    "batch": 4,
+    "imgsz": 640,
+    "tag": "G2_fedavg_brightness_flood_a30_s1",
+    "strategy_kwargs": "{}",
+    "gpu_frac": 0.14
+  },
+  "malicious_clients": [
+    0,
+    1
+  ],
+  "wall_seconds": 2195.5589871406555,
+  "global_eval": [
+    {
+      "round": 1,
+      "global_map50": 0.536601654502495,
+      "global_map50_95": 0.27518176093960356,
+      "global_precision": 0.631648887713995,
+      "global_recall": 0.482199852688436
+    },
+    {
+      "round": 2,
+      "global_map50": 0.5744331658658954,
+      "global_map50_95": 0.3023819350839896,
+      "global_precision": 0.6577928780698569,
+      "global_recall": 0.510165883894598
+    },
+    {
+      "round": 3,
+      "global_map50": 0.600830063164517,
+      "global_map50_95": 0.3222460622120168,
+      "global_precision": 0.653451387859336,
+      "global_recall": 0.5328562296444791
+    },
+    {
+      "round": 4,
+      "global_map50": 0.6097624763849923,
+      "global_map50_95": 0.33304376998341473,
+      "global_precision": 0.6668018924478919,
+      "global_recall": 0.5384237662656518
+    },
+    {
+      "round": 5,
+      "global_map50": 0.6214614723545919,
+      "global_map50_95": 0.3403211617319857,
+      "global_precision": 0.6906608705947608,
+      "global_recall": 0.5421065553645961
+    },
+    {
+      "round": 6,
+      "global_map50": 0.6221861707438006,
+      "global_map50_95": 0.34041347689762363,
+      "global_precision": 0.6941390562821634,
+      "global_recall": 0.5421065553645961
+    },
+    {
+      "round": 7,
+      "global_map50": 0.6261812800416132,
+      "global_map50_95": 0.34393971067208345,
+      "global_precision": 0.6836059088478038,
+      "global_recall": 0.552663884114903
+    },
+    {
+      "round": 8,
+      "global_map50": 0.6358436764531781,
+      "global_map50_95": 0.34899640673742505,
+      "global_precision": 0.6951295288933217,
+      "global_recall": 0.5595384237662656
+    },
+    {
+      "round": 9,
+      "global_map50": 0.6346443041160184,
+      "global_map50_95": 0.3491357519986652,
+      "global_precision": 0.6893644829931649,
+      "global_recall": 0.5585563466732139
+    },
+    {
+      "round": 10,
+      "global_map50": 0.6373132567960852,
+      "global_map50_95": 0.3505243284292778,
+      "global_precision": 0.6928559945197206,
+      "global_recall": 0.5643658438649475
+    },
+    {
+      "round": 11,
+      "global_map50": 0.6398532773044925,
+      "global_map50_95": 0.3503930893558329,
+      "global_precision": 0.6978585239236118,
+      "global_recall": 0.5634667321384729
+    },
+    {
+      "round": 12,
+      "global_map50": 0.6457297679028939,
+      "global_map50_95": 0.35348459547723426,
+      "global_precision": 0.700126689983601,
+      "global_recall": 0.5681315983304689
+    }
+  ],
+  "round_log": [
+    {
+      "round": 1,
+      "local_map50": 0.42773465162322133,
+      "local_map50_95": 0.2170181745493799,
+      "local_precision": 0.5763362596315357,
+      "local_recall": 0.38391417967109287,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 2,
+      "local_map50": 0.4885604128205596,
+      "local_map50_95": 0.2513415748213045,
+      "local_precision": 0.598856633371432,
+      "local_recall": 0.44010629557335706,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 3,
+      "local_map50": 0.5296519377452998,
+      "local_map50_95": 0.2765938564126152,
+      "local_precision": 0.5860820228327561,
+      "local_recall": 0.49368039507388184,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 4,
+      "local_map50": 0.5560190047640157,
+      "local_map50_95": 0.2887333997808184,
+      "local_precision": 0.6275888561673334,
+      "local_recall": 0.48905409572025277,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 5,
+      "local_map50": 0.5269771684634162,
+      "local_map50_95": 0.2772441823608939,
+      "local_precision": 0.6330559286132168,
+      "local_recall": 0.45356257202586747,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 6,
+      "local_map50": 0.5569122302802899,
+      "local_map50_95": 0.29309407544383304,
+      "local_precision": 0.6432742153634745,
+      "local_recall": 0.49370829010991873,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 7,
+      "local_map50": 0.5578796136356795,
+      "local_map50_95": 0.2923015937662082,
+      "local_precision": 0.6464442742704091,
+      "local_recall": 0.5005332124509937,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 8,
+      "local_map50": 0.551183095810928,
+      "local_map50_95": 0.29144246147400965,
+      "local_precision": 0.6363686888414403,
+      "local_recall": 0.49215951214154735,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 9,
+      "local_map50": 0.5426986825387073,
+      "local_map50_95": 0.28694186560840496,
+      "local_precision": 0.6353844686140038,
+      "local_recall": 0.47927343040492054,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 10,
+      "local_map50": 0.5679502342342749,
+      "local_map50_95": 0.30125802581712235,
+      "local_precision": 0.6417847685316804,
+      "local_recall": 0.512577469892794,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 11,
+      "local_map50": 0.5594259974575783,
+      "local_map50_95": 0.2944149308142094,
+      "local_precision": 0.6572098452347969,
+      "local_recall": 0.49703523405491973,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    },
+    {
+      "round": 12,
+      "local_map50": 0.5720313707232784,
+      "local_map50_95": 0.3032264264732259,
+      "local_precision": 0.6560304468670763,
+      "local_recall": 0.5093753354074012,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": ""
+    }
+  ]
+}

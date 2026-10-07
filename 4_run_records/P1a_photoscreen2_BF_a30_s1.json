@@ -1,0 +1,300 @@
+{
+  "config": {
+    "strategy": "photoscreen2",
+    "attack": "brightness_flood",
+    "alpha": 0.3,
+    "intensity": 1.0,
+    "rounds": 12,
+    "seed": 1,
+    "local_epochs": 3,
+    "batch": 4,
+    "imgsz": 640,
+    "tag": "P1a_photoscreen2_BF_a30_s1",
+    "strategy_kwargs": "{\"tau_photo\":3.0,\"temporal_anchor\":true}",
+    "gpu_frac": 0.14,
+    "dos_only": 1
+  },
+  "malicious_clients": [
+    0,
+    1
+  ],
+  "wall_seconds": 2091.933090209961,
+  "global_eval": [
+    {
+      "round": 1,
+      "global_map50": 0.5366211021572771,
+      "global_map50_95": 0.2751420314395404,
+      "global_precision": 0.6302167641616095,
+      "global_recall": 0.4837112256069937
+    },
+    {
+      "round": 2,
+      "global_map50": 0.5555022470171487,
+      "global_map50_95": 0.2890294999136402,
+      "global_precision": 0.6512185939148437,
+      "global_recall": 0.48907439233979866
+    },
+    {
+      "round": 3,
+      "global_map50": 0.5749654753907217,
+      "global_map50_95": 0.30273140938312565,
+      "global_precision": 0.650203447630889,
+      "global_recall": 0.5119076847532531
+    },
+    {
+      "round": 4,
+      "global_map50": 0.5837014487932852,
+      "global_map50_95": 0.3126669823264734,
+      "global_precision": 0.6416855749504072,
+      "global_recall": 0.5295850724281856
+    },
+    {
+      "round": 5,
+      "global_map50": 0.5912011594284229,
+      "global_map50_95": 0.3211728091878674,
+      "global_precision": 0.6403773722108602,
+      "global_recall": 0.5401424011784925
+    },
+    {
+      "round": 6,
+      "global_map50": 0.6049317300277267,
+      "global_map50_95": 0.3268293431183182,
+      "global_precision": 0.6875356847039483,
+      "global_recall": 0.5212374171372453
+    },
+    {
+      "round": 7,
+      "global_map50": 0.6063019011341603,
+      "global_map50_95": 0.3283881387020441,
+      "global_precision": 0.6743412548826988,
+      "global_recall": 0.5363583537853135
+    },
+    {
+      "round": 8,
+      "global_map50": 0.5976862757890653,
+      "global_map50_95": 0.3213899978274945,
+      "global_precision": 0.6671609215775158,
+      "global_recall": 0.53347143502343
+    },
+    {
+      "round": 9,
+      "global_map50": 0.6255093515950092,
+      "global_map50_95": 0.3379615074273171,
+      "global_precision": 0.6876123461674806,
+      "global_recall": 0.5575742695801621
+    },
+    {
+      "round": 10,
+      "global_map50": 0.6184406943477421,
+      "global_map50_95": 0.3335371480468849,
+      "global_precision": 0.674176827478719,
+      "global_recall": 0.552663884114903
+    },
+    {
+      "round": 11,
+      "global_map50": 0.6155868515463488,
+      "global_map50_95": 0.3377122300954972,
+      "global_precision": 0.6597745382334445,
+      "global_recall": 0.5580099596262746
+    },
+    {
+      "round": 12,
+      "global_map50": 0.6193662285138049,
+      "global_map50_95": 0.33701902507883846,
+      "global_precision": 0.6883220838387573,
+      "global_recall": 0.5509452492020623
+    }
+  ],
+  "round_log": [
+    {
+      "round": 1,
+      "local_map50": 0.42773465162322133,
+      "local_map50_95": 0.2170181745493799,
+      "local_precision": 0.5763362596315357,
+      "local_recall": 0.38391417967109287,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 7,
+      "rejected_ids": "",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": ""
+    },
+    {
+      "round": 2,
+      "local_map50": 0.48370820282120786,
+      "local_map50_95": 0.25098035655933143,
+      "local_precision": 0.5962015282924551,
+      "local_recall": 0.42137187325927766,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "0,6",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.5857851505279541
+    },
+    {
+      "round": 3,
+      "local_map50": 0.5044106788335129,
+      "local_map50_95": 0.26255587715910683,
+      "local_precision": 0.6014262738208934,
+      "local_recall": 0.4501122752568187,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "3,4",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.46316254138946533
+    },
+    {
+      "round": 4,
+      "local_map50": 0.5257393762107012,
+      "local_map50_95": 0.27252052607463606,
+      "local_precision": 0.6343305897702809,
+      "local_recall": 0.4557697736392386,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "1,5",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4643545150756836
+    },
+    {
+      "round": 5,
+      "local_map50": 0.5359543753927688,
+      "local_map50_95": 0.2839335408149134,
+      "local_precision": 0.6281844743541267,
+      "local_recall": 0.47813609740828544,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "0,2",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4654345214366913
+    },
+    {
+      "round": 6,
+      "local_map50": 0.5426309543777802,
+      "local_map50_95": 0.28369948370305786,
+      "local_precision": 0.6201404252005215,
+      "local_recall": 0.49563195481836625,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "0,2",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4662781357765198
+    },
+    {
+      "round": 7,
+      "local_map50": 0.5496762198013416,
+      "local_map50_95": 0.28525051745656277,
+      "local_precision": 0.6410714355608101,
+      "local_recall": 0.4848867031246273,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "1,6",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4607553780078888
+    },
+    {
+      "round": 8,
+      "local_map50": 0.5456235972181653,
+      "local_map50_95": 0.29008915232145327,
+      "local_precision": 0.6384319965206091,
+      "local_recall": 0.4811862944303475,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "1,3",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4697040617465973
+    },
+    {
+      "round": 9,
+      "local_map50": 0.5556452062753453,
+      "local_map50_95": 0.29145295078569544,
+      "local_precision": 0.6718919542372674,
+      "local_recall": 0.49377745962491865,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "0,5",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4606150686740875
+    },
+    {
+      "round": 10,
+      "local_map50": 0.561996175746108,
+      "local_map50_95": 0.2933904218473648,
+      "local_precision": 0.6594963033703742,
+      "local_recall": 0.4958894784488505,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "0,2",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4751242697238922
+    },
+    {
+      "round": 11,
+      "local_map50": 0.554436586599636,
+      "local_map50_95": 0.2919871890127008,
+      "local_precision": 0.6413415618264496,
+      "local_recall": 0.48430705083859316,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "1,3",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.49209707975387573
+    },
+    {
+      "round": 12,
+      "local_map50": 0.5515844276704135,
+      "local_map50_95": 0.2939588499029706,
+      "local_precision": 0.6365959917604763,
+      "local_recall": 0.4950496578551394,
+      "num_clients": 7,
+      "n_submitted": 7,
+      "n_accepted": 5,
+      "rejected_ids": "3,6",
+      "photo_d_max": 0.0,
+      "scale_mu": 1e-09,
+      "photo_rejected": "",
+      "mad_kept": 5,
+      "cos_min": 0.4702814221382141
+    }
+  ]
+}

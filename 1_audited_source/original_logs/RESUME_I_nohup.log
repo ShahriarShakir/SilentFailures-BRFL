@@ -1,0 +1,15 @@
+nohup: ignoring input
+=== 2026-05-07T20:54:51+10:00 RESUME from I (G14_20pct done) ===
+=== 2026-05-07T20:54:51+10:00 START new_baselines_model_replacement ===
+=== 2026-05-08T02:55:15+10:00 END   new_baselines_model_replacement rc=0 ===
+=== cleanup_tmp: removed 105 dirs, disk free: 401G ===
+=== 2026-05-08T02:55:19+10:00 START new_baselines_brightness_flood ===
+=== 2026-05-08T08:56:26+10:00 END   new_baselines_brightness_flood rc=0 ===
+=== cleanup_tmp: removed 49 dirs, disk free: 393G ===
+=== 2026-05-08T08:56:29+10:00 START K_backdoor ===
+=== 2026-05-08T14:57:32+10:00 END   K_backdoor rc=0 ===
+=== cleanup_tmp: removed 49 dirs, disk free: 386G ===
+=== 2026-05-08T14:57:35+10:00 START K_darkness_injection ===
+=== 2026-05-08T20:58:32+10:00 END   K_darkness_injection rc=0 ===
+=== cleanup_tmp: removed 49 dirs, disk free: 381G ===
+=== 2026-05-08T20:58:34+10:00 START K_feature_poisoning ===

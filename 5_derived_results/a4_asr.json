@@ -1,0 +1,11 @@
+{
+  "trig_recall_clean": 0.509230981647361,
+  "trig_recall_bd": 0.044684507733857105,
+  "glob_recall_clean": 0.5795718249008335,
+  "glob_recall_bd": 0.1062484655045421,
+  "asr_naive": 0.9553154922661429,
+  "asr_corrected": 0.9122510032887181,
+  "asr_specific": 0.521340417335244,
+  "clean_map_clean": 0.6606214774791217,
+  "clean_map_bd": 0.37319868565381914
+}

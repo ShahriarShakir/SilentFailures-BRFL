@@ -1,0 +1,370 @@
+{
+  "tau": 3.0,
+  "gamma": 0.6,
+  "cohorts": {
+    "7client": {
+      "brightness_flood|a=0.10|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.10|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.20|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.20|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.30|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.30|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.3238095238095238
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.05714285714285714
+        },
+        "R2_collapse_detection_rate": 1.0
+      },
+      "darkness_injection|a=0.10|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.10|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.20|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.20|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.047619047619047616
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.30|reported": {
+        "R0_baseline": {
+          "TPR": 0.8809523809523809,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.8809523809523809,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.30|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.3238095238095238
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.05714285714285714
+        },
+        "R2_collapse_detection_rate": 1.0
+      }
+    },
+    "14client": {
+      "brightness_flood|a=0.10|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.10|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.20|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.20|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.07042957042957043
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.01998001998001998
+        },
+        "R2_collapse_detection_rate": 0.5961538461538461
+      },
+      "brightness_flood|a=0.30|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "brightness_flood|a=0.30|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.268
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.032625
+        },
+        "R2_collapse_detection_rate": 0.925
+      },
+      "darkness_injection|a=0.10|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.10|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.20|reported": {
+        "R0_baseline": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.20|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.07042957042957043
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.01998001998001998
+        },
+        "R2_collapse_detection_rate": 0.5961538461538461
+      },
+      "darkness_injection|a=0.30|reported": {
+        "R0_baseline": {
+          "TPR": 0.9171875,
+          "FPR": 0.0
+        },
+        "R1_temporal": {
+          "TPR": 1.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.9171875,
+          "FPR": 0.0
+        },
+        "R2_collapse_detection_rate": 0.0
+      },
+      "darkness_injection|a=0.30|spoofed": {
+        "R0_baseline": {
+          "TPR": 0.0,
+          "FPR": 0.268
+        },
+        "R1_temporal": {
+          "TPR": 0.0,
+          "FPR": 0.0
+        },
+        "R3_tie": {
+          "TPR": 0.0,
+          "FPR": 0.032625
+        },
+        "R2_collapse_detection_rate": 0.925
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+nohup: ignoring input
+=== 2026-05-06T15:34:22+10:00 SUPPLEMENTARY_FINAL chain begin ===
+=== 2026-05-06T15:34:22+10:00 START threshold_sensitivity_fast ===
+=== 2026-05-06T22:24:28+10:00 END   threshold_sensitivity_fast rc=0 ===
+supplementary_experiments/scripts/run_final.sh: line 33: dlearning: command not found
+=== 2026-05-06T22:24:28+10:00 SUPPLEMENTARY_FINAL chain begin ===
+=== 2026-05-06T22:24:28+10:00 START threshold_sensitivity_fast ===
+=== 2026-05-06T22:24:28+10:00 END   threshold_sensitivity_fast rc=0 ===
+=== 2026-05-06T22:24:28+10:00 START bias_low_illumination_fast ===
+=== 2026-05-07T00:07:31+10:00 END   bias_low_illumination_fast rc=0 ===
+=== 2026-05-07T00:07:31+10:00 START scalability_14_clients ===
+=== 2026-05-07T06:36:54+10:00 END   scalability_14_clients rc=0 ===
+=== 2026-05-07T06:36:54+10:00 START scalability_14_10pct ===
+=== 2026-05-07T13:05:26+10:00 END   scalability_14_10pct rc=0 ===
+=== 2026-05-07T13:05:26+10:00 START scalability_14_20pct ===
+=== 2026-05-07T19:33:38+10:00 END   scalability_14_20pct rc=0 ===
+supplementary_experiments/scripts/run_final.sh: line 117: unexpected EOF while looking for matching `"'

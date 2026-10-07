@@ -1,0 +1,85 @@
+01:26:20 | round ~1/50 | GPU:99%  73°C  12672MB | s2: NOT_YET
+01:26:52 | round ~11/50 | GPU:12%  63°C  10006MB | s2: waiting
+01:27:01 | round ~11/50 | GPU:99%  68°C  13390MB | s2: waiting
+01:27:52 | round ~11/50 | GPU:99%  73°C  12658MB | s2: waiting
+01:28:01 | round ~11/50 | GPU:99%  74°C  12658MB | s2: waiting
+01:28:46 | round ~12/50 | GPU:99%  66°C  13444MB | s2: waiting
+01:29:47 | round ~12/50 | GPU:99%  74°C  12654MB | s2: waiting
+01:30:48 | round ~13/50 | GPU:99%  69°C  13580MB | s2: waiting
+01:31:48 | round ~13/50 | GPU:48%  69°C  6930MB | s2: waiting
+01:32:48 | round ~14/50 | GPU:99%  71°C  12562MB | s2: waiting
+01:33:49 | round ~15/50 | GPU:24%  63°C  12264MB | s2: waiting
+01:34:50 | round ~15/50 | GPU:99%  72°C  12688MB | s2: waiting
+01:35:50 | round ~16/50 | GPU:99%  68°C  13540MB | s2: waiting
+01:36:52 | round ~16/50 | GPU:66%  70°C  8232MB | s2: waiting
+01:37:52 | round ~17/50 | GPU:99%  72°C  12586MB | s2: waiting
+01:38:52 | round ~18/50 | GPU:0%  64°C  6340MB | s2: waiting
+01:39:52 | round ~18/50 | GPU:99%  71°C  12674MB | s2: waiting
+01:40:53 | round ~19/50 | GPU:99%  68°C  13514MB | s2: waiting
+01:41:54 | round ~19/50 | GPU:99%  72°C  12692MB | s2: waiting
+01:42:55 | round ~20/50 | GPU:99%  72°C  12548MB | s2: waiting
+01:43:55 | round ~20/50 | GPU:20%  67°C  6372MB | s2: waiting
+01:44:55 | round ~21/50 | GPU:99%  70°C  12606MB | s2: waiting
+01:45:56 | round ~22/50 | GPU:99%  69°C  13380MB | s2: waiting
+01:46:56 | round ~22/50 | GPU:100%  73°C  12660MB | s2: waiting
+01:47:57 | round ~23/50 | GPU:99%  72°C  13560MB | s2: waiting
+01:48:57 | round ~23/50 | GPU:57%  71°C  6944MB | s2: waiting
+01:49:57 | round ~24/50 | GPU:100%  73°C  12564MB | s2: waiting
+01:50:58 | round ~25/50 | GPU:35%  63°C  13122MB | s2: waiting
+01:51:58 | round ~25/50 | GPU:99%  75°C  12698MB | s2: waiting
+01:52:59 | round ~26/50 | GPU:99%  69°C  13578MB | s2: waiting
+01:53:59 | round ~26/50 | GPU:99%  75°C  11536MB | s2: waiting
+01:54:59 | round ~27/50 | GPU:99%  71°C  12596MB | s2: waiting
+01:55:59 | round ~27/50 | GPU:23%  68°C  6354MB | s2: waiting
+01:57:00 | round ~28/50 | GPU:99%  73°C  12682MB | s2: waiting
+01:58:00 | round ~29/50 | GPU:99%  69°C  13394MB | s2: waiting
+01:59:00 | round ~29/50 | GPU:99%  75°C  12694MB | s2: waiting
+02:00:00 | round ~30/50 | GPU:99%  71°C  13550MB | s2: waiting
+02:01:01 | round ~30/50 | GPU:55%  71°C  6934MB | s2: waiting
+02:02:01 | round ~31/50 | GPU:99%  72°C  12574MB | s2: waiting
+02:03:01 | round ~32/50 | GPU:25%  64°C  9202MB | s2: waiting
+02:04:01 | round ~32/50 | GPU:99%  72°C  12700MB | s2: waiting
+02:05:02 | round ~33/50 | GPU:99%  67°C  13506MB | s2: waiting
+02:06:02 | round ~33/50 | GPU:99%  73°C  11524MB | s2: waiting
+02:07:02 | round ~34/50 | GPU:99%  72°C  12560MB | s2: waiting
+02:08:03 | round ~34/50 | GPU:3%  66°C  6326MB | s2: waiting
+02:09:03 | round ~35/50 | GPU:99%  74°C  12660MB | s2: waiting
+02:10:03 | round ~36/50 | GPU:99%  67°C  13348MB | s2: waiting
+02:11:04 | round ~36/50 | GPU:99%  72°C  12700MB | s2: waiting
+02:12:05 | round ~37/50 | GPU:99%  72°C  13592MB | s2: waiting
+02:13:05 | round ~37/50 | GPU:58%  70°C  6916MB | s2: waiting
+02:14:05 | round ~38/50 | GPU:99%  72°C  12594MB | s2: waiting
+02:15:06 | round ~39/50 | GPU:20%  63°C  9248MB | s2: waiting
+02:16:07 | round ~39/50 | GPU:98%  72°C  12728MB | s2: waiting
+02:17:07 | round ~40/50 | GPU:99%  69°C  13518MB | s2: waiting
+02:18:08 | round ~40/50 | GPU:98%  73°C  10418MB | s2: waiting
+02:19:08 | round ~41/50 | GPU:99%  71°C  12556MB | s2: waiting
+02:20:08 | round ~42/50 | GPU:0%  64°C  6322MB | s2: waiting
+02:21:09 | round ~42/50 | GPU:99%  73°C  12684MB | s2: waiting
+02:22:09 | round ~43/50 | GPU:99%  67°C  13478MB | s2: waiting
+02:23:10 | round ~43/50 | GPU:99%  74°C  11744MB | s2: waiting
+02:24:10 | round ~44/50 | GPU:99%  72°C  12590MB | s2: waiting
+02:25:10 | round ~44/50 | GPU:23%  67°C  6314MB | s2: waiting
+02:26:11 | round ~45/50 | GPU:99%  74°C  12660MB | s2: waiting
+02:27:11 | round ~46/50 | GPU:57%  64°C  13234MB | s2: waiting
+02:28:11 | round ~46/50 | GPU:99%  75°C  12668MB | s2: waiting
+02:29:12 | round ~47/50 | GPU:99%  71°C  13574MB | s2: waiting
+02:30:12 | round ~47/50 | GPU:47%  71°C  6928MB | s2: waiting
+02:31:12 | round ~48/50 | GPU:99%  70°C  12572MB | s2: waiting
+02:32:13 | round ~49/50 | GPU:74%  64°C  9194MB | s2: waiting
+02:33:14 | round ~49/50 | GPU:99%  72°C  12666MB | s2: waiting
+02:34:15 | round ~50/50 | GPU:99%  71°C  13548MB | s2: waiting
+02:35:15 | round ~50/50 | GPU:99%  75°C  10818MB | s2: waiting
+02:36:15 | *** scaffold_s2.json DONE *** s2 COMPLETE
+fedavg_s1             rounds=50  last5=51.86pp  worst5=51.06pp
+fedavg_s2             rounds=50  last5=52.85pp  worst5=51.76pp
+photoscreen_s1           rounds=50  last5=53.20pp  worst5=51.93pp
+photoscreen_s2           rounds=50  last5=53.40pp  worst5=52.81pp
+scaffold_s1           rounds=50  last5=53.02pp  worst5=51.69pp
+scaffold_s2           rounds=50  last5=53.39pp  worst5=52.16pp
+
+=== Summary Table ===
+fedavg        mean last5=52.35pp  mean worst5=51.41pp
+scaffold      mean last5=53.21pp  mean worst5=51.92pp
+photoscreen      mean last5=53.30pp  mean worst5=52.37pp
+

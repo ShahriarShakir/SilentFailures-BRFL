@@ -1,0 +1,86 @@
+{
+  "leipzig": {
+    "clean": {
+      "mu": 0.2161916741169989,
+      "sigma": 0.15557191870175302,
+      "n": 32
+    },
+    "brightness_flood": {
+      "mu": 0.7060077395290136,
+      "sigma": 0.12821684125810862,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_leipzig_brightness_flood_887f58e1e2/data.yaml",
+      "materialise_seconds": 28.4
+    },
+    "darkness_injection": {
+      "mu": 0.04093412504880689,
+      "sigma": 0.094109550351277,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_leipzig_darkness_injection_90c01eb815/data.yaml",
+      "materialise_seconds": 18.2
+    },
+    "noise_storm": {
+      "mu": 0.22062508668750525,
+      "sigma": 0.16384258400648832,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_leipzig_noise_storm_2921993a21/data.yaml",
+      "materialise_seconds": 51.4
+    }
+  },
+  "budapest": {
+    "clean": {
+      "mu": 0.2914898628368974,
+      "sigma": 0.17028489080257714,
+      "n": 32
+    },
+    "brightness_flood": {
+      "mu": 0.7694568261504173,
+      "sigma": 0.11480359127745032,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_budapest_brightness_flood_2e6938b76d/data.yaml",
+      "materialise_seconds": 78.6
+    },
+    "darkness_injection": {
+      "mu": 0.06451129127526656,
+      "sigma": 0.1301943596918136,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_budapest_darkness_injection_9a1f5a6c92/data.yaml",
+      "materialise_seconds": 53.7
+    },
+    "noise_storm": {
+      "mu": 0.2922004866413772,
+      "sigma": 0.17849283129908144,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_budapest_noise_storm_de1c9d3d1a/data.yaml",
+      "materialise_seconds": 143.7
+    }
+  },
+  "prague": {
+    "clean": {
+      "mu": 0.1881799683906138,
+      "sigma": 0.11522600124590099,
+      "n": 32
+    },
+    "brightness_flood": {
+      "mu": 0.682044617831707,
+      "sigma": 0.0890520391985774,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_prague_brightness_flood_7ba3c938a3/data.yaml",
+      "materialise_seconds": 77.2
+    },
+    "darkness_injection": {
+      "mu": 0.017952235088159796,
+      "sigma": 0.07185383833711967,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_prague_darkness_injection_bb151e4e46/data.yaml",
+      "materialise_seconds": 41.6
+    },
+    "noise_storm": {
+      "mu": 0.19191344128921628,
+      "sigma": 0.1283618020825088,
+      "n": 32,
+      "yaml": "/ANON/fl_hod/project/work/poisoned/client_prague_noise_storm_b69f89ca75/data.yaml",
+      "materialise_seconds": 124.8
+    }
+  }
+}

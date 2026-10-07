@@ -1,0 +1,345 @@
+nohup: ignoring input
+[2026-05-09 17:46:47] ======================================================
+[2026-05-09 17:46:47] ======================================================
+[2026-05-09 17:46:47] WATCHDOG CHAIN STARTED PID=2325695
+[2026-05-09 17:46:47] WATCHDOG CHAIN STARTED PID=2325695
+[2026-05-09 17:46:47] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:47] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:47] Stall threshold: 10 min
+[2026-05-09 17:46:47] Stall threshold: 10 min
+[2026-05-09 17:46:47] ======================================================
+[2026-05-09 17:46:47] ======================================================
+[2026-05-09 17:46:47] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+[2026-05-09 17:46:47] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+nohup: ignoring input
+[2026-05-09 17:46:53] ======================================================
+[2026-05-09 17:46:53] ======================================================
+[2026-05-09 17:46:53] WATCHDOG CHAIN STARTED PID=2325836
+[2026-05-09 17:46:53] WATCHDOG CHAIN STARTED PID=2325836
+[2026-05-09 17:46:53] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:53] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:53] Stall threshold: 10 min
+[2026-05-09 17:46:53] Stall threshold: 10 min
+[2026-05-09 17:46:53] ======================================================
+[2026-05-09 17:46:53] ======================================================
+[2026-05-09 17:46:53] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+[2026-05-09 17:46:53] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+nohup: ignoring input
+[2026-05-09 17:46:57] ======================================================
+[2026-05-09 17:46:57] ======================================================
+[2026-05-09 17:46:57] WATCHDOG CHAIN STARTED PID=2325903
+[2026-05-09 17:46:57] WATCHDOG CHAIN STARTED PID=2325903
+[2026-05-09 17:46:57] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:57] D(4 runs ~340min) → TrimMean(1 run ~51min) → H_Full(2 runs ~170min)
+[2026-05-09 17:46:57] Stall threshold: 10 min
+[2026-05-09 17:46:57] Stall threshold: 10 min
+[2026-05-09 17:46:57] ======================================================
+[2026-05-09 17:46:57] ======================================================
+[2026-05-09 17:46:57] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+[2026-05-09 17:46:57] --- STEP 1: D_layer_ablation (adopted PID 2299562) ---
+[2026-05-09 17:48:50] OK D | round=13 | files=0/4 | GPU=99, 71
+[2026-05-09 17:48:50] OK D | round=13 | files=0/4 | GPU=99, 71
+[2026-05-09 17:50:52] OK D | round=14 | files=0/4 | GPU=99, 75
+[2026-05-09 17:50:52] OK D | round=14 | files=0/4 | GPU=99, 75
+[2026-05-09 17:52:54] OK D | round=15 | files=0/4 | GPU=99, 75
+[2026-05-09 17:52:54] OK D | round=15 | files=0/4 | GPU=99, 75
+[2026-05-09 17:54:57] OK D | round=16 | files=0/4 | GPU=58, 72
+[2026-05-09 17:54:57] OK D | round=16 | files=0/4 | GPU=58, 72
+[2026-05-09 17:57:01] OK D | round=18 | files=0/4 | GPU=85, 65
+[2026-05-09 17:57:01] OK D | round=18 | files=0/4 | GPU=85, 65
+[2026-05-09 17:59:03] OK D | round=19 | files=0/4 | GPU=99, 73
+[2026-05-09 17:59:03] OK D | round=19 | files=0/4 | GPU=99, 73
+[2026-05-09 18:01:07] OK D | round=20 | files=0/4 | GPU=99, 73
+[2026-05-09 18:01:07] OK D | round=20 | files=0/4 | GPU=99, 73
+[2026-05-09 18:03:09] OK D | round=21 | files=0/4 | GPU=99, 76
+[2026-05-09 18:03:09] OK D | round=21 | files=0/4 | GPU=99, 76
+[2026-05-09 18:05:11] OK D | round=22 | files=0/4 | GPU=0, 69
+[2026-05-09 18:05:11] OK D | round=22 | files=0/4 | GPU=0, 69
+[2026-05-09 18:07:14] OK D | round=24 | files=0/4 | GPU=97, 68
+[2026-05-09 18:07:14] OK D | round=24 | files=0/4 | GPU=97, 68
+[2026-05-09 18:09:17] OK D | round=25 | files=0/4 | GPU=99, 73
+[2026-05-09 18:09:17] OK D | round=25 | files=0/4 | GPU=99, 73
+[2026-05-09 18:11:20] OK D | round=26 | files=0/4 | GPU=99, 75
+[2026-05-09 18:11:20] OK D | round=26 | files=0/4 | GPU=99, 75
+[2026-05-09 18:13:23] OK D | round=27 | files=0/4 | GPU=99, 75
+[2026-05-09 18:13:23] OK D | round=27 | files=0/4 | GPU=99, 75
+[2026-05-09 18:15:26] OK D | round=28 | files=0/4 | GPU=0, 68
+[2026-05-09 18:15:26] OK D | round=28 | files=0/4 | GPU=0, 68
+[2026-05-09 18:17:28] OK D | round=30 | files=0/4 | GPU=99, 69
+[2026-05-09 18:17:28] OK D | round=30 | files=0/4 | GPU=99, 69
+[2026-05-09 18:19:30] OK D | round=31 | files=0/4 | GPU=99, 73
+[2026-05-09 18:19:30] OK D | round=31 | files=0/4 | GPU=99, 73
+[2026-05-09 18:21:33] OK D | round=32 | files=0/4 | GPU=99, 73
+[2026-05-09 18:21:33] OK D | round=32 | files=0/4 | GPU=99, 73
+[2026-05-09 18:23:36] OK D | round=33 | files=0/4 | GPU=99, 75
+[2026-05-09 18:23:36] OK D | round=33 | files=0/4 | GPU=99, 75
+[2026-05-09 18:25:38] OK D | round=34 | files=0/4 | GPU=45, 71
+[2026-05-09 18:25:38] OK D | round=34 | files=0/4 | GPU=45, 71
+[2026-05-09 18:27:41] OK D | round=36 | files=0/4 | GPU=89, 67
+[2026-05-09 18:27:41] OK D | round=36 | files=0/4 | GPU=89, 67
+[2026-05-09 18:29:44] OK D | round=37 | files=0/4 | GPU=100, 73
+[2026-05-09 18:29:44] OK D | round=37 | files=0/4 | GPU=100, 73
+[2026-05-09 18:31:47] OK D | round=38 | files=0/4 | GPU=99, 74
+[2026-05-09 18:31:47] OK D | round=38 | files=0/4 | GPU=99, 74
+[2026-05-09 18:33:49] OK D | round=39 | files=0/4 | GPU=99, 76
+[2026-05-09 18:33:49] OK D | round=39 | files=0/4 | GPU=99, 76
+[2026-05-09 18:35:51] OK D | round=40 | files=0/4 | GPU=49, 71
+[2026-05-09 18:35:51] OK D | round=40 | files=0/4 | GPU=49, 71
+[2026-05-09 18:37:55] OK D | round=42 | files=0/4 | GPU=62, 65
+[2026-05-09 18:37:55] OK D | round=42 | files=0/4 | GPU=62, 65
+[2026-05-09 18:39:58] OK D | round=43 | files=0/4 | GPU=99, 71
+[2026-05-09 18:39:58] OK D | round=43 | files=0/4 | GPU=99, 71
+[2026-05-09 18:42:01] OK D | round=44 | files=0/4 | GPU=99, 73
+[2026-05-09 18:42:01] OK D | round=44 | files=0/4 | GPU=99, 73
+[2026-05-09 18:44:03] OK D | round=45 | files=0/4 | GPU=99, 76
+[2026-05-09 18:44:03] OK D | round=45 | files=0/4 | GPU=99, 76
+[2026-05-09 18:46:06] OK D | round=46 | files=0/4 | GPU=59, 72
+[2026-05-09 18:46:06] OK D | round=46 | files=0/4 | GPU=59, 72
+[2026-05-09 18:48:09] OK D | round=48 | files=0/4 | GPU=69, 67
+[2026-05-09 18:48:09] OK D | round=48 | files=0/4 | GPU=69, 67
+[2026-05-09 18:50:11] OK D | round=49 | files=0/4 | GPU=99, 71
+[2026-05-09 18:50:11] OK D | round=49 | files=0/4 | GPU=99, 71
+[2026-05-09 18:52:14] OK D | round=50 | files=0/4 | GPU=99, 73
+[2026-05-09 18:52:14] OK D | round=50 | files=0/4 | GPU=99, 73
+[2026-05-09 18:54:17] OK D | round=1 | files=0/4 | GPU=99, 75
+[2026-05-09 18:54:17] OK D | round=1 | files=0/4 | GPU=99, 75
+[2026-05-09 18:56:20] OK D | round=2 | files=0/4 | GPU=99, 75
+[2026-05-09 18:56:20] OK D | round=2 | files=0/4 | GPU=99, 75
+[2026-05-09 18:58:23] OK D | round=4 | files=0/4 | GPU=26, 65
+[2026-05-09 18:58:23] OK D | round=4 | files=0/4 | GPU=26, 65
+[2026-05-09 19:00:26] OK D | round=5 | files=0/4 | GPU=99, 71
+[2026-05-09 19:00:26] OK D | round=5 | files=0/4 | GPU=99, 71
+[2026-05-09 19:02:29] OK D | round=6 | files=0/4 | GPU=99, 72
+[2026-05-09 19:02:29] OK D | round=6 | files=0/4 | GPU=99, 72
+[2026-05-09 19:04:32] OK D | round=7 | files=0/4 | GPU=99, 73
+[2026-05-09 19:04:32] OK D | round=7 | files=0/4 | GPU=99, 73
+[2026-05-09 19:06:34] OK D | round=8 | files=0/4 | GPU=99, 74
+[2026-05-09 19:06:34] OK D | round=8 | files=0/4 | GPU=99, 74
+[2026-05-09 19:08:37] OK D | round=10 | files=0/4 | GPU=25, 65
+[2026-05-09 19:08:37] OK D | round=10 | files=0/4 | GPU=25, 65
+[2026-05-09 19:10:40] OK D | round=11 | files=0/4 | GPU=99, 72
+[2026-05-09 19:10:40] OK D | round=11 | files=0/4 | GPU=99, 72
+[2026-05-09 19:12:42] OK D | round=12 | files=0/4 | GPU=100, 73
+[2026-05-09 19:12:42] OK D | round=12 | files=0/4 | GPU=100, 73
+[2026-05-09 19:14:45] OK D | round=13 | files=0/4 | GPU=99, 75
+[2026-05-09 19:14:45] OK D | round=13 | files=0/4 | GPU=99, 75
+[2026-05-09 19:16:47] OK D | round=14 | files=0/4 | GPU=52, 71
+[2026-05-09 19:16:47] OK D | round=14 | files=0/4 | GPU=52, 71
+[2026-05-09 19:18:51] OK D | round=16 | files=0/4 | GPU=33, 65
+[2026-05-09 19:18:51] OK D | round=16 | files=0/4 | GPU=33, 65
+[2026-05-09 19:20:53] OK D | round=17 | files=0/4 | GPU=99, 72
+[2026-05-09 19:20:53] OK D | round=17 | files=0/4 | GPU=99, 72
+[2026-05-09 19:22:55] OK D | round=18 | files=0/4 | GPU=99, 74
+[2026-05-09 19:22:55] OK D | round=18 | files=0/4 | GPU=99, 74
+[2026-05-09 19:24:58] OK D | round=19 | files=0/4 | GPU=99, 73
+[2026-05-09 19:24:58] OK D | round=19 | files=0/4 | GPU=99, 73
+[2026-05-09 19:27:01] OK D | round=20 | files=0/4 | GPU=65, 71
+[2026-05-09 19:27:01] OK D | round=20 | files=0/4 | GPU=65, 71
+[2026-05-09 19:29:05] OK D | round=22 | files=0/4 | GPU=14, 64
+[2026-05-09 19:29:05] OK D | round=22 | files=0/4 | GPU=14, 64
+[2026-05-09 19:31:08] OK D | round=23 | files=0/4 | GPU=99, 72
+[2026-05-09 19:31:08] OK D | round=23 | files=0/4 | GPU=99, 72
+[2026-05-09 19:33:10] OK D | round=24 | files=0/4 | GPU=100, 74
+[2026-05-09 19:33:10] OK D | round=24 | files=0/4 | GPU=100, 74
+[2026-05-09 19:35:13] OK D | round=25 | files=0/4 | GPU=99, 73
+[2026-05-09 19:35:13] OK D | round=25 | files=0/4 | GPU=99, 73
+[2026-05-09 19:37:15] OK D | round=26 | files=0/4 | GPU=99, 75
+[2026-05-09 19:37:15] OK D | round=26 | files=0/4 | GPU=99, 75
+[2026-05-09 19:39:19] OK D | round=28 | files=0/4 | GPU=44, 65
+[2026-05-09 19:39:19] OK D | round=28 | files=0/4 | GPU=44, 65
+[2026-05-09 19:41:22] OK D | round=29 | files=0/4 | GPU=99, 72
+[2026-05-09 19:41:22] OK D | round=29 | files=0/4 | GPU=99, 72
+[2026-05-09 19:43:25] OK D | round=30 | files=0/4 | GPU=99, 73
+[2026-05-09 19:43:25] OK D | round=30 | files=0/4 | GPU=99, 73
+[2026-05-09 19:45:28] OK D | round=31 | files=0/4 | GPU=99, 73
+[2026-05-09 19:45:28] OK D | round=31 | files=0/4 | GPU=99, 73
+[2026-05-09 19:47:30] OK D | round=32 | files=0/4 | GPU=55, 71
+[2026-05-09 19:47:30] OK D | round=32 | files=0/4 | GPU=55, 71
+[2026-05-09 19:49:33] OK D | round=34 | files=0/4 | GPU=43, 65
+[2026-05-09 19:49:33] OK D | round=34 | files=0/4 | GPU=43, 65
+[2026-05-09 19:51:36] OK D | round=35 | files=0/4 | GPU=99, 72
+[2026-05-09 19:51:36] OK D | round=35 | files=0/4 | GPU=99, 72
+[2026-05-09 19:53:38] OK D | round=36 | files=0/4 | GPU=99, 72
+[2026-05-09 19:53:38] OK D | round=36 | files=0/4 | GPU=99, 72
+[2026-05-09 19:55:40] OK D | round=37 | files=0/4 | GPU=100, 75
+[2026-05-09 19:55:40] OK D | round=37 | files=0/4 | GPU=100, 75
+[2026-05-09 19:57:43] OK D | round=38 | files=0/4 | GPU=94, 75
+[2026-05-09 19:57:43] OK D | round=38 | files=0/4 | GPU=94, 75
+[2026-05-09 19:59:46] OK D | round=40 | files=0/4 | GPU=44, 65
+[2026-05-09 19:59:46] OK D | round=40 | files=0/4 | GPU=44, 65
+[2026-05-09 20:01:48] OK D | round=41 | files=0/4 | GPU=99, 72
+[2026-05-09 20:01:48] OK D | round=41 | files=0/4 | GPU=99, 72
+[2026-05-09 20:03:50] OK D | round=42 | files=0/4 | GPU=99, 75
+[2026-05-09 20:03:50] OK D | round=42 | files=0/4 | GPU=99, 75
+[2026-05-09 20:05:54] OK D | round=43 | files=0/4 | GPU=99, 75
+[2026-05-09 20:05:54] OK D | round=43 | files=0/4 | GPU=99, 75
+[2026-05-09 20:07:57] OK D | round=44 | files=0/4 | GPU=61, 73
+[2026-05-09 20:07:57] OK D | round=44 | files=0/4 | GPU=61, 73
+[2026-05-09 20:10:00] OK D | round=46 | files=0/4 | GPU=55, 66
+[2026-05-09 20:10:00] OK D | round=46 | files=0/4 | GPU=55, 66
+[2026-05-09 20:12:02] OK D | round=47 | files=0/4 | GPU=99, 70
+[2026-05-09 20:12:02] OK D | round=47 | files=0/4 | GPU=99, 70
+[2026-05-09 20:14:05] OK D | round=48 | files=0/4 | GPU=99, 72
+[2026-05-09 20:14:05] OK D | round=48 | files=0/4 | GPU=99, 72
+[2026-05-09 20:16:08] OK D | round=49 | files=0/4 | GPU=99, 76
+[2026-05-09 20:16:08] OK D | round=49 | files=0/4 | GPU=99, 76
+[2026-05-09 20:18:10] OK D | round=50 | files=0/4 | GPU=99, 74
+[2026-05-09 20:18:10] OK D | round=50 | files=0/4 | GPU=99, 74
+[2026-05-09 20:20:14] OK D | round=1 | files=0/4 | GPU=95, 74
+[2026-05-09 20:20:14] OK D | round=1 | files=0/4 | GPU=95, 74
+[2026-05-09 20:20:14] D adopted runner gone. files=0/4
+[2026-05-09 20:20:14] D adopted runner gone. files=0/4
+[2026-05-09 20:20:14] D incomplete — running remaining via config
+[2026-05-09 20:20:14] D incomplete — running remaining via config
+[2026-05-09 20:20:14] === START D_layer_ablation ===
+[2026-05-09 20:20:14] === START D_layer_ablation ===
+[2026-05-09 20:20:14] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:20:14] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:20:14] Runner PID=2513945
+[2026-05-09 20:20:14] Runner PID=2513945
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:22:17] OK D_layer_ablation | round=3 | GPU=0, 65
+[2026-05-09 20:22:17] OK D_layer_ablation | round=3 | GPU=0, 65
+[2026-05-09 20:22:17] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:22:17] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:22:32] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:22:32] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:22:32] Runner PID=2517628
+[2026-05-09 20:22:32] Runner PID=2517628
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:24:35] OK D_layer_ablation | round=4 | GPU=99, 73
+[2026-05-09 20:24:35] OK D_layer_ablation | round=4 | GPU=99, 73
+[2026-05-09 20:24:35] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:24:35] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:24:50] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:24:50] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:24:50] Runner PID=2519988
+[2026-05-09 20:24:50] Runner PID=2519988
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:26:52] OK D_layer_ablation | round=5 | GPU=99, 75
+[2026-05-09 20:26:52] OK D_layer_ablation | round=5 | GPU=99, 75
+[2026-05-09 20:26:52] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:26:52] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:27:07] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:27:07] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:27:07] Runner PID=2522316
+[2026-05-09 20:27:07] Runner PID=2522316
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:29:11] OK D_layer_ablation | round=7 | GPU=92, 68
+[2026-05-09 20:29:11] OK D_layer_ablation | round=7 | GPU=92, 68
+[2026-05-09 20:29:11] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:29:11] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:29:26] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:29:26] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:29:26] Runner PID=2526050
+[2026-05-09 20:29:26] Runner PID=2526050
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:31:30] OK D_layer_ablation | round=8 | GPU=99, 73
+[2026-05-09 20:31:30] OK D_layer_ablation | round=8 | GPU=99, 73
+[2026-05-09 20:31:30] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:31:30] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:31:45] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:31:45] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:31:45] Runner PID=2528387
+[2026-05-09 20:31:45] Runner PID=2528387
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:33:47] OK D_layer_ablation | round=9 | GPU=99, 76
+[2026-05-09 20:33:47] OK D_layer_ablation | round=9 | GPU=99, 76
+[2026-05-09 20:33:47] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:33:47] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:34:02] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:34:02] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:34:02] Runner PID=2531107
+[2026-05-09 20:34:02] Runner PID=2531107
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:36:05] OK D_layer_ablation | round=11 | GPU=99, 71
+[2026-05-09 20:36:05] OK D_layer_ablation | round=11 | GPU=99, 71
+[2026-05-09 20:36:05] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:36:05] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:36:20] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:36:20] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:36:20] Runner PID=2534299
+[2026-05-09 20:36:20] Runner PID=2534299
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:38:22] OK D_layer_ablation | round=12 | GPU=100, 75
+[2026-05-09 20:38:22] OK D_layer_ablation | round=12 | GPU=100, 75
+[2026-05-09 20:38:22] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:38:22] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:38:37] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:38:37] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:38:37] Runner PID=2536663
+[2026-05-09 20:38:37] Runner PID=2536663
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:40:41] OK D_layer_ablation | round=13 | GPU=98, 72
+[2026-05-09 20:40:41] OK D_layer_ablation | round=13 | GPU=98, 72
+[2026-05-09 20:40:41] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:40:41] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:40:56] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:40:56] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:40:56] Runner PID=2539723
+[2026-05-09 20:40:56] Runner PID=2539723
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
+[2026-05-09 20:42:59] OK D_layer_ablation | round=15 | GPU=99, 71
+[2026-05-09 20:42:59] OK D_layer_ablation | round=15 | GPU=99, 71
+[2026-05-09 20:42:59] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:42:59] Still incomplete after exit. Retry in 15s...
+[2026-05-09 20:43:14] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:43:14] Launching: --config supplementary_experiments/configs/D_L001_L101_rerun.yaml
+[2026-05-09 20:43:14] Runner PID=2542867
+[2026-05-09 20:43:14] Runner PID=2542867
+[plan] experiment D_layer_ablation: 4 runs
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+  [skip] D_layer_ablation/photoscreen_s1 (already done)
+  [skip] D_layer_ablation/photoscreen_s2 (already done)
+
