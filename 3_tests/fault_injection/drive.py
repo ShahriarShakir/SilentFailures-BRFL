@@ -43,8 +43,9 @@ def checks(f, logs_by_seed):
     decidable per round and does not depend on a correlation, which misses faults where both series
     rise and diverge only in level.
 
-    T4 asserts the seed at its point of use. Comparing trajectories passed on 23 of 26 arms in the
-    audited archive while the seed reached nothing.
+    T4 here is the assertion half: the seed must arrive at its point of use. replicate.py adds the
+    second half (different seeds must give different trajectories). In the audited archive, comparing
+    trajectories alone flags 3 of the 26 arms while the seed was inert in 16 (paper, Section 4.8).
     """
     out = {}
     lg = logs_by_seed[0]

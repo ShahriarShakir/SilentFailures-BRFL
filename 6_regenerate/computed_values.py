@@ -302,6 +302,15 @@ _a4m.update({"OneTensorLines": f"{_one_lines:,}".replace(",", "{,}"), "OneTensor
              "OneTensorFiles": _one_files,
              "OneTensorRepMin": f"{np.floor(100 * min(_onev)) / 100:.2f}",
              "OneTensorRepMax": f"{np.ceil(100 * max(_onev)) / 100:.2f}"})
+# ---------------- Section 8, T3: what a weak positive correlation means, from the same per-run correlations
+_l4 = {k_: float(np.mean([r_[2] for r_ in rows if r_[0] == k_][-4:])) for k_ in per}
+_hl = [k_ for k_ in per if _l4[k_] >= 0.60]                 # aggregate ends healthy
+_wk = [k_ for k_ in per if 0 <= per[k_][0] < 0.5]           # weak positive correlation
+assert _hl and _wk and not set(_hl) & set(_wk)
+_a4m.update({"TThreeNHealthy": len(_hl),
+             "TThreeHealthyMinR": f"{np.floor(100 * min(per[k_][0] for k_ in _hl)) / 100:+.2f}",
+             "TThreeNWeak": len(_wk),
+             "TThreeWeakMaxGlobal": f"{np.ceil(100 * max(_l4[k_] for k_ in _wk)) / 100:.2f}"})
 # ---------------- Section 5.1: the three-seed check, from the derived file seed_check.json
 _SCK = json.load(open("../5_derived_results/seed_check.json"))["attacks"]
 _same = _tot = _orddiff = _ordtot = 0; _exc = []

@@ -96,17 +96,20 @@ def acc(state, x, y):
     return float((m(x.to(DEV)).argmax(1).cpu() == y).float().mean())
 
 
-def run(f: Fault, K=6, n=256, rounds=6, epochs=2, lr=3e-3, seed=0, nc=10, data_seed=7):
+def run(f: Fault, K=6, n=256, rounds=6, epochs=2, lr=3e-3, seed=0, nc=10, data_seed=7, client_val=0):
     # data partition is fixed across seeds; only the training seed varies, so 'seed ignored'
     # is isolated from 'different data'
     clients = make_clients(K, n, nc, data_seed)
+    # optional held-out split per client: new samples from the same client distribution (same
+    # class templates, gain and offset), drawn with their own generator so training is unchanged
+    val = make_clients(K, client_val, nc, data_seed + 500) if client_val else None
     held = make_clients(1, 512, nc, data_seed + 999)[0]
     g = Net().to(DEV).state_dict()
     n_mal = 2
     log = []
     prev_scale = None
     for r in range(rounds):
-        subs, reported, screened_out = [], [], []
+        subs, reported, screened_out, reported_val = [], [], [], []
         state_hashes, seeds_used = [], []
         for k, (x, y) in enumerate(clients):
             xk = x.clone()
@@ -121,6 +124,8 @@ def run(f: Fault, K=6, n=256, rounds=6, epochs=2, lr=3e-3, seed=0, nc=10, data_s
             sd = {kk: v.detach().cpu().clone() for kk, v in m.state_dict().items()}
             subs.append(sd)
             reported.append(acc(sd, x, y))                          # client-local metric
+            if val is not None:
+                reported_val.append(acc(sd, *val[k]))              # same, on the client's held-out split
             state_hashes.append(hashlib.sha256(
                 b"".join(v.numpy().tobytes() for v in sd.values())).hexdigest()[:16])
             seeds_used.append(eff)
@@ -163,7 +168,10 @@ def run(f: Fault, K=6, n=256, rounds=6, epochs=2, lr=3e-3, seed=0, nc=10, data_s
             lo = lo + 0.05
         agg_hash = hashlib.sha256(
             b"".join(v.detach().cpu().numpy().tobytes() for v in g.values())).hexdigest()[:16]
-        log.append({"round": r + 1, "global": gl, "local": lo,
+        lv = float(np.mean(reported_val)) if val is not None else None
+        if lv is not None and f.metric_stage == "pre_adaptation_offset":
+            lv = lv + 0.05
+        log.append({"round": r + 1, "global": gl, "local": lo, "local_val": lv,
                     "n_kept": len(keep), "screen_scores": [float(s) for s in screened_out],
                     "metric_state_hashes": state_hashes,   # states the reported metric came from
                     "aggregated_state_hash": agg_hash,     # state the defense is meant to protect

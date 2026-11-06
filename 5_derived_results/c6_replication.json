@@ -1,0 +1,1797 @@
+{
+ "1": {
+  "data_seed": 1007,
+  "seeds": [
+   2,
+   3
+  ],
+  "conditions": {
+   "attack never applied": {
+    "kind": "fault",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     1.0
+    ],
+    "local_train_last3": [
+     1.0,
+     1.0
+    ],
+    "local_val_last3": [
+     1.0,
+     1.0
+    ]
+   },
+   "head not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.4453125,
+     0.7135416666666666
+    ],
+    "local_train_last3": [
+     0.6961805555555555,
+     0.7267795138888888
+    ],
+    "local_val_last3": [
+     0.6918402777777778,
+     0.7378472222222222
+    ]
+   },
+   "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.6959635416666666,
+     0.5533854166666666
+    ],
+    "local_train_last3": [
+     0.6831597222222222,
+     0.7157118055555557
+    ],
+    "local_val_last3": [
+     0.6827256944444445,
+     0.7161458333333334
+    ]
+   },
+   "screen input constant": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": true,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "screen inert": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "screen reversed": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "seed ignored": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": true,
+     "T4_trajectory": false,
+     "T4": true
+    },
+    "global_last3": [
+     0.537109375,
+     0.708984375
+    ],
+    "local_train_last3": [
+     0.693359375,
+     0.7176649305555557
+    ],
+    "local_val_last3": [
+     0.6948784722222222,
+     0.7291666666666666
+    ]
+   },
+   "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5514322916666666,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.7548611111111111,
+     0.7507378472222223
+    ],
+    "local_val_last3": [
+     0.7518229166666668,
+     0.7570312499999999
+    ]
+   },
+   "healthy": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.6959635416666666,
+     0.5533854166666666
+    ],
+    "local_train_last3": [
+     0.6831597222222222,
+     0.7157118055555557
+    ],
+    "local_val_last3": [
+     0.6827256944444445,
+     0.7161458333333334
+    ]
+   },
+   "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     0.9986979166666666
+    ],
+    "local_train_last3": [
+     0.9947916666666666,
+     0.9947916666666666
+    ],
+    "local_val_last3": [
+     0.9954427083333334,
+     0.9976128472222222
+    ]
+   },
+   "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   },
+   "textbook screen (3 MAD)": {
+    "kind": "probe",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5247395833333334,
+     0.6536458333333334
+    ],
+    "local_train_last3": [
+     0.68359375,
+     0.7007378472222222
+    ],
+    "local_val_last3": [
+     0.6857638888888888,
+     0.70703125
+    ]
+   }
+  }
+ },
+ "2": {
+  "data_seed": 2007,
+  "seeds": [
+   4,
+   5
+  ],
+  "conditions": {
+   "attack never applied": {
+    "kind": "fault",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     1.0
+    ],
+    "local_train_last3": [
+     1.0,
+     1.0
+    ],
+    "local_val_last3": [
+     1.0,
+     1.0
+    ]
+   },
+   "head not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.6373697916666666,
+     0.638671875
+    ],
+    "local_train_last3": [
+     0.705078125,
+     0.6961805555555555
+    ],
+    "local_val_last3": [
+     0.6998697916666666,
+     0.697265625
+    ]
+   },
+   "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.279296875,
+     0.203125
+    ],
+    "local_train_last3": [
+     0.7057291666666666,
+     0.6953125
+    ],
+    "local_val_last3": [
+     0.7092013888888888,
+     0.6959635416666666
+    ]
+   },
+   "screen input constant": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": true,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "screen inert": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "screen reversed": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "seed ignored": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": true,
+     "T4_trajectory": false,
+     "T4": true
+    },
+    "global_last3": [
+     0.8684895833333334,
+     0.7408854166666666
+    ],
+    "local_train_last3": [
+     0.695529513888889,
+     0.6729600694444445
+    ],
+    "local_val_last3": [
+     0.691189236111111,
+     0.6770833333333334
+    ]
+   },
+   "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5807291666666666,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.7414062499999999,
+     0.7437934027777778
+    ],
+    "local_val_last3": [
+     0.7427083333333334,
+     0.7433593749999999
+    ]
+   },
+   "healthy": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.279296875,
+     0.203125
+    ],
+    "local_train_last3": [
+     0.7057291666666666,
+     0.6953125
+    ],
+    "local_val_last3": [
+     0.7092013888888888,
+     0.6959635416666666
+    ]
+   },
+   "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.9954427083333334,
+     1.0
+    ],
+    "local_train_last3": [
+     0.9895833333333334,
+     0.9969618055555555
+    ],
+    "local_val_last3": [
+     0.9937065972222223,
+     0.9989149305555555
+    ]
+   },
+   "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   },
+   "textbook screen (3 MAD)": {
+    "kind": "probe",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.8763020833333334,
+     0.8040364583333334
+    ],
+    "local_train_last3": [
+     0.6979166666666666,
+     0.6937934027777777
+    ],
+    "local_val_last3": [
+     0.6961805555555555,
+     0.693359375
+    ]
+   }
+  }
+ },
+ "3": {
+  "data_seed": 3007,
+  "seeds": [
+   6,
+   7
+  ],
+  "conditions": {
+   "attack never applied": {
+    "kind": "fault",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     1.0
+    ],
+    "local_train_last3": [
+     1.0,
+     1.0
+    ],
+    "local_val_last3": [
+     1.0,
+     1.0
+    ]
+   },
+   "head not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.615234375,
+     0.67578125
+    ],
+    "local_train_last3": [
+     0.6909722222222223,
+     0.7018229166666666
+    ],
+    "local_val_last3": [
+     0.6996527777777777,
+     0.7013888888888888
+    ]
+   },
+   "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.44921875,
+     0.33203125
+    ],
+    "local_train_last3": [
+     0.70703125,
+     0.7076822916666666
+    ],
+    "local_val_last3": [
+     0.7135416666666666,
+     0.7044270833333334
+    ]
+   },
+   "screen input constant": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": true,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "screen inert": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "screen reversed": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "seed ignored": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": true,
+     "T4_trajectory": false,
+     "T4": true
+    },
+    "global_last3": [
+     0.66015625,
+     0.744140625
+    ],
+    "local_train_last3": [
+     0.6907552083333334,
+     0.679904513888889
+    ],
+    "local_val_last3": [
+     0.6950954861111112,
+     0.6812065972222223
+    ]
+   },
+   "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5305989583333334,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.7407552083333334,
+     0.7531250000000002
+    ],
+    "local_val_last3": [
+     0.741623263888889,
+     0.7570312500000002
+    ]
+   },
+   "healthy": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.44921875,
+     0.33203125
+    ],
+    "local_train_last3": [
+     0.70703125,
+     0.7076822916666666
+    ],
+    "local_val_last3": [
+     0.7135416666666666,
+     0.7044270833333334
+    ]
+   },
+   "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     0.998046875
+    ],
+    "local_train_last3": [
+     0.9819878472222223,
+     0.980685763888889
+    ],
+    "local_val_last3": [
+     0.9830729166666666,
+     0.9830729166666666
+    ]
+   },
+   "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   },
+   "textbook screen (3 MAD)": {
+    "kind": "probe",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.662109375,
+     0.7734375
+    ],
+    "local_train_last3": [
+     0.703125,
+     0.703125
+    ],
+    "local_val_last3": [
+     0.7098524305555557,
+     0.70703125
+    ]
+   }
+  }
+ },
+ "4": {
+  "data_seed": 4007,
+  "seeds": [
+   8,
+   9
+  ],
+  "conditions": {
+   "attack never applied": {
+    "kind": "fault",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     1.0
+    ],
+    "local_train_last3": [
+     1.0,
+     1.0
+    ],
+    "local_val_last3": [
+     1.0,
+     1.0
+    ]
+   },
+   "head not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.4563802083333333,
+     0.833984375
+    ],
+    "local_train_last3": [
+     0.7013888888888888,
+     0.7078993055555555
+    ],
+    "local_val_last3": [
+     0.697265625,
+     0.7018229166666666
+    ]
+   },
+   "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.3424479166666667,
+     0.201171875
+    ],
+    "local_train_last3": [
+     0.6990017361111112,
+     0.7044270833333334
+    ],
+    "local_val_last3": [
+     0.6940104166666666,
+     0.701171875
+    ]
+   },
+   "screen input constant": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": true,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "screen inert": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "screen reversed": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "seed ignored": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": true,
+     "T4_trajectory": false,
+     "T4": true
+    },
+    "global_last3": [
+     0.6653645833333334,
+     0.7376302083333334
+    ],
+    "local_train_last3": [
+     0.697265625,
+     0.677517361111111
+    ],
+    "local_val_last3": [
+     0.6944444444444445,
+     0.685763888888889
+    ]
+   },
+   "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.5533854166666666,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.7342447916666667,
+     0.7565972222222223
+    ],
+    "local_val_last3": [
+     0.7361979166666668,
+     0.7518229166666668
+    ]
+   },
+   "healthy": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.3424479166666667,
+     0.201171875
+    ],
+    "local_train_last3": [
+     0.6990017361111112,
+     0.7044270833333334
+    ],
+    "local_val_last3": [
+     0.6940104166666666,
+     0.701171875
+    ]
+   },
+   "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.9993489583333334,
+     0.9967447916666666
+    ],
+    "local_train_last3": [
+     0.97265625,
+     0.9800347222222222
+    ],
+    "local_val_last3": [
+     0.9698350694444443,
+     0.9787326388888888
+    ]
+   },
+   "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   },
+   "textbook screen (3 MAD)": {
+    "kind": "probe",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.65234375,
+     0.75390625
+    ],
+    "local_train_last3": [
+     0.6996527777777778,
+     0.7065972222222222
+    ],
+    "local_val_last3": [
+     0.6961805555555557,
+     0.7018229166666666
+    ]
+   }
+  }
+ },
+ "5": {
+  "data_seed": 5007,
+  "seeds": [
+   10,
+   11
+  ],
+  "conditions": {
+   "attack never applied": {
+    "kind": "fault",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     1.0,
+     1.0
+    ],
+    "local_train_last3": [
+     1.0,
+     1.0
+    ],
+    "local_val_last3": [
+     1.0,
+     1.0
+    ]
+   },
+   "head not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.6171875,
+     0.5833333333333334
+    ],
+    "local_train_last3": [
+     0.6764322916666666,
+     0.7076822916666666
+    ],
+    "local_val_last3": [
+     0.6846788194444445,
+     0.7118055555555555
+    ]
+   },
+   "buffers not shared": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.19270833333333334,
+     0.4095052083333333
+    ],
+    "local_train_last3": [
+     0.685329861111111,
+     0.6959635416666666
+    ],
+    "local_val_last3": [
+     0.6927083333333334,
+     0.7013888888888888
+    ]
+   },
+   "screen input constant": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": true,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "screen inert": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "screen reversed": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "wrong reference profile": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": true,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "seed ignored": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": true,
+     "T4_trajectory": false,
+     "T4": true
+    },
+    "global_last3": [
+     0.7115885416666666,
+     0.771484375
+    ],
+    "local_train_last3": [
+     0.6976996527777778,
+     0.6723090277777778
+    ],
+    "local_val_last3": [
+     0.7033420138888888,
+     0.6768663194444445
+    ]
+   },
+   "metric stage mislabelled": {
+    "kind": "fault",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.587890625,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.7531249999999999,
+     0.7652777777777778
+    ],
+    "local_val_last3": [
+     0.7550781250000002,
+     0.7635416666666668
+    ]
+   },
+   "healthy": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "deliberate personalised BN": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.19270833333333334,
+     0.4095052083333333
+    ],
+    "local_train_last3": [
+     0.685329861111111,
+     0.6959635416666666
+    ],
+    "local_val_last3": [
+     0.6927083333333334,
+     0.7013888888888888
+    ]
+   },
+   "weak but executed attack": {
+    "kind": "healthy",
+    "checks": {
+     "T1": true,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.9889322916666666,
+     1.0
+    ],
+    "local_train_last3": [
+     0.9976128472222222,
+     0.9932725694444445
+    ],
+    "local_val_last3": [
+     0.9995659722222223,
+     0.9950086805555555
+    ]
+   },
+   "harmless transform": {
+    "kind": "healthy",
+    "checks": {
+     "T1": false,
+     "T2": null,
+     "T3": true,
+     "T5": null,
+     "T5_input_varies": null,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   },
+   "textbook screen (3 MAD)": {
+    "kind": "probe",
+    "checks": {
+     "T1": false,
+     "T2": true,
+     "T3": true,
+     "T5": false,
+     "T5_input_varies": false,
+     "T4_assert": false,
+     "T4_trajectory": false,
+     "T4": false
+    },
+    "global_last3": [
+     0.7350260416666666,
+     0.7799479166666666
+    ],
+    "local_train_last3": [
+     0.6851128472222222,
+     0.7152777777777778
+    ],
+    "local_val_last3": [
+     0.6920572916666666,
+     0.7135416666666666
+    ]
+   }
+  }
+ }
+}

@@ -33,6 +33,7 @@ python make_figures.py       # writes the figures
 cd ..
 python 3_tests/falsification_suite.py   # reproduces the T2 and T4 findings
 python 3_tests/fault_injection/drive.py # re-runs the fault-injection study of Section 9 (uses a GPU if present)
+CUDA_VISIBLE_DEVICES= python 3_tests/fault_injection/replicate.py   # the replication of Appendix G, on CPU
 ```
 
 The two `.tex` files are byte-identical to the ones the PDF was built from. The regeneration
@@ -114,3 +115,8 @@ files parse.
   averaging fault of Section 4.9. `3_tests/falsification_suite.py` states that its T4 comparison is
   made to nine decimals, and a comment in `2_corrected_harness/client_fix.py` dates the loader-seed
   block. `computed_values.tex` and `c6_values.tex` remain byte-identical to the ones the PDF was built from.
+- November 2026: `3_tests/fault_injection/replicate.py` repeats the fault-injection study on five new data
+  draws (Appendix G of the paper): T4 with both halves, and the client-local metric also on a held-out split of
+  each client's own data (`inject.run(..., client_val=n)`, off by default, so `drive.py` reproduces the
+  original study unchanged). Its output is `5_derived_results/c6_replication.json`. `computed_values.py` also
+  computes the correlation summary of Section 8 (T3), and `c6_values.py` the replication summary.
